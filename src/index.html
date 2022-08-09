@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Sky Asia Team Building - самое ожидаемое событие этой осени</title>
 
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
 
@@ -53,6 +53,17 @@
         g {
             font-family: 'GetVoIP Grotesque', sans-serif;
         }
+
+        .programm {
+            position: relative;
+            max-width: 1182px;
+        }
+
+        @media (max-width: 1024px) {
+            .programm {
+                max-width: none;
+            }
+        }
     </style>
 </head>
 
@@ -64,6 +75,7 @@
                 <button class="header__burger">
                     <img src="img/menu-open.svg" alt="">
                 </button>
+                <div class="header__hidden"></div>
                 <a href="/" class="header__logo">
                     <svg class="logo" width="57" height="57" viewBox="0 0 57 57" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +158,8 @@
                 </a>
                 <div class="header__socials">
 
-                    <a href="" class="_hover">
+                    <a href="" class="_hover social-link">
+                        <img src="img/soc-bgc.svg" alt="">
                         <svg viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M15.8349 18.4898V13.2282C18.8636 13.7671 19.8212 16.5484 21.7498 18.4898H26.6665C25.4372 15.2876 23.6032 12.4514 21.3016 10.1933C23.0672 7.35647 24.9416 4.68605 25.8583 0.636841H21.3899C19.6378 3.73516 18.7142 7.36439 15.8349 9.75747V0.636841H9.34947L10.8978 2.87143V10.8351C8.38515 10.4944 6.6874 5.1298 4.84704 0.636841H0.181641C1.87939 6.70669 5.45144 20.0271 15.8349 18.4898Z"
@@ -161,7 +174,8 @@
                         </svg>
 
                     </a>
-                    <a href="" class="_hover">
+                    <a href="" class="_hover social-link">
+                        <img src="img/soc-bgc.svg" alt="">
                         <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M24.4718 2.93006L20.8083 22.1199C20.5317 23.474 19.8111 23.8111 18.787 23.1735L13.2046 18.6046L10.5114 21.4823C10.2131 21.8136 9.96427 22.09 9.38938 22.09L9.79085 15.7759L20.1363 5.39272C20.5863 4.94776 20.0383 4.70025 19.4374 5.14616L6.6476 14.0915L1.1415 12.1768C-0.055974 11.7617 -0.0776514 10.8468 1.39122 10.2082L22.9275 0.992299C23.9246 0.577202 24.7969 1.23885 24.4718 2.93103V2.93006Z"
@@ -176,7 +190,8 @@
                         </svg>
 
                     </a>
-                    <a href="" class="_hover">
+                    <a href="" class="_hover social-link">
+                        <img src="img/soc-bgc.svg" alt="">
                         <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M7.11543 0.0935715C8.31201 0.0384863 8.69352 0.0262451 11.7416 0.0262451C14.7896 0.0262451 15.1711 0.0395064 16.3667 0.0935715C17.5622 0.147637 18.3783 0.338395 19.0924 0.614841C19.8401 0.897408 20.5185 1.33911 21.0795 1.91036C21.6508 2.4704 22.0915 3.14774 22.373 3.89649C22.6505 4.61056 22.8402 5.42664 22.8953 6.62015C22.9504 7.81877 22.9626 8.20028 22.9626 11.2473C22.9626 14.2954 22.9494 14.6769 22.8953 15.8735C22.8412 17.067 22.6505 17.883 22.373 18.5971C22.0915 19.346 21.6501 20.0244 21.0795 20.5853C20.5185 21.1565 19.8401 21.5972 19.0924 21.8788C18.3783 22.1562 17.5622 22.346 16.3687 22.4011C15.1711 22.4561 14.7896 22.4684 11.7416 22.4684C8.69352 22.4684 8.31201 22.4551 7.11543 22.4011C5.92192 22.347 5.10584 22.1562 4.39178 21.8788C3.64294 21.5972 2.96448 21.1558 2.40361 20.5853C1.83274 20.0249 1.39097 19.3468 1.1091 18.5981C0.832657 17.8841 0.642919 17.068 0.587834 15.8745C0.532749 14.6759 0.520508 14.2943 0.520508 11.2473C0.520508 8.19926 0.533769 7.81775 0.587834 6.62219C0.641899 5.42664 0.832657 4.61056 1.1091 3.89649C1.39139 3.14782 1.83349 2.4697 2.40463 1.90934C2.9647 1.3386 3.64249 0.89684 4.39076 0.614841C5.10482 0.338395 5.9209 0.148657 7.11441 0.0935715H7.11543ZM16.2759 2.11336C15.0926 2.0593 14.7376 2.04808 11.7416 2.04808C8.74555 2.04808 8.39056 2.0593 7.20724 2.11336C6.11268 2.16335 5.51898 2.34595 5.12319 2.49998C4.59988 2.704 4.2255 2.94576 3.83276 3.3385C3.46047 3.70069 3.17396 4.1416 2.99424 4.62892C2.84021 5.02472 2.65761 5.61842 2.60763 6.71298C2.55356 7.89629 2.54234 8.25129 2.54234 11.2473C2.54234 14.2433 2.55356 14.5983 2.60763 15.7816C2.65761 16.8762 2.84021 17.4699 2.99424 17.8657C3.17378 18.3523 3.46043 18.794 3.83276 19.1561C4.1949 19.5285 4.6366 19.8151 5.12319 19.9946C5.51898 20.1487 6.11268 20.3313 7.20724 20.3813C8.39056 20.4353 8.74453 20.4465 11.7416 20.4465C14.7386 20.4465 15.0926 20.4353 16.2759 20.3813C17.3705 20.3313 17.9642 20.1487 18.36 19.9946C18.8833 19.7906 19.2576 19.5489 19.6504 19.1561C20.0227 18.794 20.3094 18.3523 20.4889 17.8657C20.6429 17.4699 20.8255 16.8762 20.8755 15.7816C20.9296 14.5983 20.9408 14.2433 20.9408 11.2473C20.9408 8.25129 20.9296 7.89629 20.8755 6.71298C20.8255 5.61842 20.6429 5.02472 20.4889 4.62892C20.2849 4.10561 20.0431 3.73124 19.6504 3.3385C19.2882 2.96624 18.8473 2.67973 18.36 2.49998C17.9642 2.34595 17.3705 2.16335 16.2759 2.11336ZM10.3083 14.7065C11.1088 15.0397 12 15.0846 12.8299 14.8337C13.6598 14.5828 14.3769 14.0515 14.8586 13.3306C15.3403 12.6097 15.5568 11.744 15.4711 10.8812C15.3854 10.0184 15.0028 9.21219 14.3887 8.60016C13.9972 8.20893 13.5239 7.90936 13.0028 7.72303C12.4816 7.53669 11.9256 7.46822 11.3748 7.52255C10.8241 7.57687 10.2922 7.75264 9.81747 8.0372C9.34277 8.32176 8.93707 8.70803 8.62957 9.1682C8.32207 9.62837 8.12042 10.151 8.03915 10.6985C7.95787 11.2459 7.99899 11.8046 8.15954 12.3342C8.3201 12.8639 8.59609 13.3514 8.96765 13.7616C9.33921 14.1718 9.79709 14.4945 10.3083 14.7065ZM7.66323 7.16896C8.1988 6.63339 8.83462 6.20855 9.53439 5.91869C10.2342 5.62884 10.9842 5.47966 11.7416 5.47966C12.499 5.47966 13.249 5.62884 13.9488 5.91869C14.6485 6.20854 15.2843 6.63339 15.8199 7.16896C16.3555 7.70454 16.7803 8.34036 17.0702 9.04012C17.36 9.73989 17.5092 10.4899 17.5092 11.2473C17.5092 12.0047 17.36 12.7547 17.0702 13.4545C16.7803 14.1543 16.3555 14.7901 15.8199 15.3257C14.7383 16.4073 13.2713 17.015 11.7416 17.015C10.2119 17.015 8.74487 16.4073 7.66323 15.3257C6.58158 14.244 5.97392 12.777 5.97392 11.2473C5.97392 9.71763 6.58158 8.25061 7.66323 7.16896ZM18.7884 6.3386C18.9211 6.21341 19.0274 6.06285 19.1009 5.89586C19.1744 5.72886 19.2136 5.54881 19.2162 5.36638C19.2189 5.18395 19.1849 5.00284 19.1163 4.83377C19.0478 4.6647 18.9459 4.51111 18.8169 4.3821C18.6879 4.25309 18.5343 4.15127 18.3653 4.08268C18.1962 4.01409 18.0151 3.98012 17.8326 3.98278C17.6502 3.98544 17.4702 4.02467 17.3032 4.09816C17.1362 4.17165 16.9856 4.2779 16.8604 4.41062C16.6169 4.66874 16.4836 5.01158 16.4888 5.36638C16.494 5.72118 16.6372 6.05999 16.8881 6.3109C17.139 6.56181 17.4778 6.70505 17.8326 6.71023C18.1874 6.7154 18.5303 6.58209 18.7884 6.3386Z"
@@ -191,8 +206,9 @@
                         </svg>
                     </a>
                 </div>
-                <a href="https://new.skyway.capital/auth/login" class="login">
-                    <button class="header__order _btn-gradient _hover">
+                <a class="button-link _hover" href="https://new.skyway.capital/auth/login" class="login">
+                    <img src="img/grad-bgc.png" alt="">
+                    <button class="header__order _btn-gradient ">
                         <span>Забронировать место</span>
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -204,10 +220,13 @@
             </div>
         </div>
     </header>
-    <img class="top-ball" src="img/1x1.png" data-src="img/ball1.svg" alt="">
+
+    <img src="img/shaiba.png" class="first-shaiba max1024" alt="">
+
+    <img class="top-ball max1024" src="img/1x1.png" data-src="img/ball1.svg" alt="">
     <img class="left-elipse min1200" src="img/1x1.png" data-src="img/elipse1.svg" alt="">
     <img class="left-elipse max1200" src="img/1x1.png" data-src="img/elipse1.2.svg" alt="">
-    <div class="menu fixed-element">
+    <div class="menu">
         <div class="menu__container _container">
             <div class="menu__burger-parent">
                 <button class="menu__burger">
@@ -298,7 +317,8 @@
                 <div class="menu__main">
                     <a class="menu__main-home" href="/">Главная</a>
                     <div class="menu__socials">
-                        <a href="" class="_hover">
+                        <a href="" class="_hover social-link">
+                            <img src="img/soc-bgc.svg" alt="">
                             <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -314,7 +334,8 @@
                             </svg>
 
                         </a>
-                        <a href="" class="_hover">
+                        <a href="" class="_hover social-link">
+                            <img src="img/soc-bgc.svg" alt="">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -330,7 +351,8 @@
                             </svg>
 
                         </a>
-                        <a href="" class="_hover">
+                        <a href="" class="_hover social-link">
+                            <img src="img/soc-bgc.svg" alt="">
                             <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M7.11543 0.0935715C8.31201 0.0384863 8.69352 0.0262451 11.7416 0.0262451C14.7896 0.0262451 15.1711 0.0395064 16.3667 0.0935715C17.5622 0.147637 18.3783 0.338395 19.0924 0.614841C19.8401 0.897408 20.5185 1.33911 21.0795 1.91036C21.6508 2.4704 22.0915 3.14774 22.373 3.89649C22.6505 4.61056 22.8402 5.42664 22.8953 6.62015C22.9504 7.81877 22.9626 8.20028 22.9626 11.2473C22.9626 14.2954 22.9494 14.6769 22.8953 15.8735C22.8412 17.067 22.6505 17.883 22.373 18.5971C22.0915 19.346 21.6501 20.0244 21.0795 20.5853C20.5185 21.1565 19.8401 21.5972 19.0924 21.8788C18.3783 22.1562 17.5622 22.346 16.3687 22.4011C15.1711 22.4561 14.7896 22.4684 11.7416 22.4684C8.69352 22.4684 8.31201 22.4551 7.11543 22.4011C5.92192 22.347 5.10584 22.1562 4.39178 21.8788C3.64294 21.5972 2.96448 21.1558 2.40361 20.5853C1.83274 20.0249 1.39097 19.3468 1.1091 18.5981C0.832657 17.8841 0.642919 17.068 0.587834 15.8745C0.532749 14.6759 0.520508 14.2943 0.520508 11.2473C0.520508 8.19926 0.533769 7.81775 0.587834 6.62219C0.641899 5.42664 0.832657 4.61056 1.1091 3.89649C1.39139 3.14782 1.83349 2.4697 2.40463 1.90934C2.9647 1.3386 3.64249 0.89684 4.39076 0.614841C5.10482 0.338395 5.9209 0.148657 7.11441 0.0935715H7.11543ZM16.2759 2.11336C15.0926 2.0593 14.7376 2.04808 11.7416 2.04808C8.74555 2.04808 8.39056 2.0593 7.20724 2.11336C6.11268 2.16335 5.51898 2.34595 5.12319 2.49998C4.59988 2.704 4.2255 2.94576 3.83276 3.3385C3.46047 3.70069 3.17396 4.1416 2.99424 4.62892C2.84021 5.02472 2.65761 5.61842 2.60763 6.71298C2.55356 7.89629 2.54234 8.25129 2.54234 11.2473C2.54234 14.2433 2.55356 14.5983 2.60763 15.7816C2.65761 16.8762 2.84021 17.4699 2.99424 17.8657C3.17378 18.3523 3.46043 18.794 3.83276 19.1561C4.1949 19.5285 4.6366 19.8151 5.12319 19.9946C5.51898 20.1487 6.11268 20.3313 7.20724 20.3813C8.39056 20.4353 8.74453 20.4465 11.7416 20.4465C14.7386 20.4465 15.0926 20.4353 16.2759 20.3813C17.3705 20.3313 17.9642 20.1487 18.36 19.9946C18.8833 19.7906 19.2576 19.5489 19.6504 19.1561C20.0227 18.794 20.3094 18.3523 20.4889 17.8657C20.6429 17.4699 20.8255 16.8762 20.8755 15.7816C20.9296 14.5983 20.9408 14.2433 20.9408 11.2473C20.9408 8.25129 20.9296 7.89629 20.8755 6.71298C20.8255 5.61842 20.6429 5.02472 20.4889 4.62892C20.2849 4.10561 20.0431 3.73124 19.6504 3.3385C19.2882 2.96624 18.8473 2.67973 18.36 2.49998C17.9642 2.34595 17.3705 2.16335 16.2759 2.11336ZM10.3083 14.7065C11.1088 15.0397 12 15.0846 12.8299 14.8337C13.6598 14.5828 14.3769 14.0515 14.8586 13.3306C15.3403 12.6097 15.5568 11.744 15.4711 10.8812C15.3854 10.0184 15.0028 9.21219 14.3887 8.60016C13.9972 8.20893 13.5239 7.90936 13.0028 7.72303C12.4816 7.53669 11.9256 7.46822 11.3748 7.52255C10.8241 7.57687 10.2922 7.75264 9.81747 8.0372C9.34277 8.32176 8.93707 8.70803 8.62957 9.1682C8.32207 9.62837 8.12042 10.151 8.03915 10.6985C7.95787 11.2459 7.99899 11.8046 8.15954 12.3342C8.3201 12.8639 8.59609 13.3514 8.96765 13.7616C9.33921 14.1718 9.79709 14.4945 10.3083 14.7065ZM7.66323 7.16896C8.1988 6.63339 8.83462 6.20855 9.53439 5.91869C10.2342 5.62884 10.9842 5.47966 11.7416 5.47966C12.499 5.47966 13.249 5.62884 13.9488 5.91869C14.6485 6.20854 15.2843 6.63339 15.8199 7.16896C16.3555 7.70454 16.7803 8.34036 17.0702 9.04012C17.36 9.73989 17.5092 10.4899 17.5092 11.2473C17.5092 12.0047 17.36 12.7547 17.0702 13.4545C16.7803 14.1543 16.3555 14.7901 15.8199 15.3257C14.7383 16.4073 13.2713 17.015 11.7416 17.015C10.2119 17.015 8.74487 16.4073 7.66323 15.3257C6.58158 14.244 5.97392 12.777 5.97392 11.2473C5.97392 9.71763 6.58158 8.25061 7.66323 7.16896ZM18.7884 6.3386C18.9211 6.21341 19.0274 6.06285 19.1009 5.89586C19.1744 5.72886 19.2136 5.54881 19.2162 5.36638C19.2189 5.18395 19.1849 5.00284 19.1163 4.83377C19.0478 4.6647 18.9459 4.51111 18.8169 4.3821C18.6879 4.25309 18.5343 4.15127 18.3653 4.08268C18.1962 4.01409 18.0151 3.98012 17.8326 3.98278C17.6502 3.98544 17.4702 4.02467 17.3032 4.09816C17.1362 4.17165 16.9856 4.2779 16.8604 4.41062C16.6169 4.66874 16.4836 5.01158 16.4888 5.36638C16.494 5.72118 16.6372 6.05999 16.8881 6.3109C17.139 6.56181 17.4778 6.70505 17.8326 6.71023C18.1874 6.7154 18.5303 6.58209 18.7884 6.3386Z"
@@ -349,13 +371,13 @@
                 <nav>
                     <ul>
                         <li><a href="/">Главная</li>
-                        <li><a class="spikers-link" href="#spikers">Спикеры</a></li>
-                        <li><a class="programma-link" href="#programma">Программа</a></li>
-                        <li><a class="oplata-link" href="#oplata">Оплата</a></li>
-                        <li><a class="chtotebiajdet-link" href="#chtotebiajdet">Что тебя ждёт?</a></li>
-                        <li><a class="tinezabudesh-link" href="#tinezabudesh">Ты не забудешь никогда...</a></li>
-                        <li><a class="videopriglashenie-link" href="#videopriglashenie">Видео приглашение</a></li>
-                        <li><a class="galereya-link" href="#galereya">Галерея</a></li>
+                        <li><a data-bar="3" class="spikers-link" href="#spikers">Спикеры</a></li>
+                        <li><a data-bar="4" class="programma-link" href="#programma">Программа</a></li>
+                        <li><a data-bar="6" class="oplata-link" href="#oplata">Оплата</a></li>
+                        <li><a data-bar="2" class="chtotebiajdet-link" href="#chtotebiajdet">Что тебя ждёт?</a></li>
+                        <li><a data-bar="4" class="tinezabudesh-link" href="#tinezabudesh">Ты не забудешь никогда...</a></li>
+                        <li><a data-bar="5" class="videopriglashenie-link" href="#videopriglashenie">Видео приглашение</a></li>
+                        <li><a data-bar="7" class="galereya-link" href="#galereya">Галерея</a></li>
                     </ul>
                 </nav>
                 <div class="menu__order">
@@ -444,8 +466,9 @@
                         <h3>Sky Азия Team Building</h3>
                         <p>«Сентябрь дарит отличные возможности для партнёров SWC” <br><br> “Мы - команда нового
                             мышления»</p>
-                        <a href="https://new.skyway.capital/auth/login">
-                            <button class="menu__btn _btn-gradient _hover _btn-white">
+                        <a class="button-link _hover" href="https://new.skyway.capital/auth/login">
+                            <img src="img/btn-w-bgc.png" alt="">
+                            <button class="menu__btn _btn-gradient _btn-white">
                                 <span>Забронировать место</span>
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -467,8 +490,9 @@
                         </a>
                     </div>
                 </div>
-                <a href="https://new.skyway.capital/auth/login">
-                    <button class="menu__btn _btn-gradient _hover">
+                <a class="button-link maxwidth257 _hover" href="https://new.skyway.capital/auth/login">
+                    <img src="img/grad-bgc.png" alt="">
+                    <button class="menu__btn _btn-gradient ">
                         <span>Забронировать место</span>
                         <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -487,8 +511,8 @@
         </buton>
         <div class="popup__video-container _container">
             <div class="popup__video-body">
-                <video preload="metadata" controls="controls" src="files/video_2022.mp4">
-                    <source src="files/video_2022.mp4" type='video/mp4'>
+                <video preload="metadata" controls="controls" src="files/video_2022_2.mp4">
+                    <source src="files/video_2022_2.mp4" type='video/mp4'>
                 </video>
             </div>
         </div>
@@ -498,421 +522,472 @@
     <img class="left-gradient min768" src="img/1x1.png" data-src="img/left-gradient.png" alt="">
     <img class="left-gradient max768" src="img/1x1.png" data-src="img/left-gradient2.png" alt="">
     <main class="page">
-        <section class="first">
-            <div class="first__container _container">
-                <div class="first__body">
-                    <div class="first__content">
-                        <h2 class="_section-title">Sky Asia Team Building</h2>
-                        <p><span>самое</span> ожидаемое событие этой осени</p>
-                        <a href="https://new.skyway.capital/auth/login">
-                            <button class="_btn-gradient _hover">
-                                <span>Забронировать место</span>
-                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+        <div class="scroll-wrapper">
+            <section class="first" data-bar="1">
+                <img src="img/first-bottom.png" class="first-bottom" alt="">
+                <div class="first__container _container">
+                    <div class="first__body">
+                        <div class="first__content">
+                            <h2 class="_section-title">Sky Asia Team Building</h2>
+                            <p><span>самое</span> ожидаемое событие этой осени</p>
+                            <a class="button-link _hover" href="https://new.skyway.capital/auth/login">
+                                <img src="img/grad-bgc.png" alt="">
+                                <button class="_btn-gradient">
+                                    <span>Забронировать место</span>
+                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.6534 2.49687H13.8374V1.08885C13.8374 0.96437 13.788 0.844992 13.6999 0.756973C13.6119 0.668955 13.4925 0.619507 13.3681 0.619507C13.2436 0.619507 13.1242 0.668955 13.0362 0.756973C12.9482 0.844992 12.8987 0.96437 12.8987 1.08885V2.49687H6.32798V1.08885C6.32798 0.96437 6.27853 0.844992 6.19051 0.756973C6.10249 0.668955 5.98311 0.619507 5.85864 0.619507C5.73416 0.619507 5.61478 0.668955 5.52676 0.756973C5.43875 0.844992 5.3893 0.96437 5.3893 1.08885V2.49687H2.57326C1.95111 2.49761 1.35465 2.74509 0.914718 3.18502C0.474788 3.62495 0.227308 4.22141 0.226562 4.84356V17.0464C0.227308 17.6685 0.474788 18.265 0.914718 18.7049C1.35465 19.1449 1.95111 19.3923 2.57326 19.3931H16.6534C17.2757 19.3926 17.8723 19.1452 18.3123 18.7052C18.7522 18.2652 18.9996 17.6686 19.0001 17.0464V4.84356C18.9996 4.22133 18.7522 3.62473 18.3123 3.18475C17.8723 2.74476 17.2757 2.49736 16.6534 2.49687ZM18.0615 17.0464C18.0615 17.4198 17.9131 17.778 17.6491 18.042C17.385 18.3061 17.0269 18.4544 16.6534 18.4544H2.57326C2.19983 18.4544 1.8417 18.3061 1.57764 18.042C1.31359 17.778 1.16524 17.4198 1.16524 17.0464V9.06762H18.0615V17.0464ZM18.0615 8.12894H1.16524V4.84356C1.16524 4.06634 1.79416 3.43554 2.57326 3.43554H5.3893V4.84356C5.3893 4.96804 5.43875 5.08742 5.52676 5.17544C5.61478 5.26345 5.73416 5.3129 5.85864 5.3129C5.98311 5.3129 6.10249 5.26345 6.19051 5.17544C6.27853 5.08742 6.32798 4.96804 6.32798 4.84356V3.43554H12.8987V4.84356C12.8987 4.96804 12.9482 5.08742 13.0362 5.17544C13.1242 5.26345 13.2436 5.3129 13.3681 5.3129C13.4925 5.3129 13.6119 5.26345 13.6999 5.17544C13.788 5.08742 13.8374 4.96804 13.8374 4.84356V3.43554H16.6534C17.0269 3.43554 17.385 3.58389 17.6491 3.84794C17.9131 4.112 18.0615 4.47013 18.0615 4.84356V8.12894Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </a>
+                            <div class="data-gradient">26.09 - 30.09 2022</div>
+                        </div>
+                        <div class="first__image">
+                            <div class="first__image-body">
+                                <img class="first__image-main" src="img/first-bgc.png" alt="">
+                                <div class="first__image-img">
+                                    <img class="animate__animated animate__pulse animate__infinite	infinite"
+                                        src="img/1x1.png" data-src="img/first-svg.svg" alt="">
+                                </div>
+                                <div class="first__image-content">
+                                    Сентябрь дарит отличные возможности для партнёров SWC 💯.
+                                    <br><br>
+                                    Ждем вас в <span>уникальном</span> месте силы Киргизии на озере-легенде
+                                    <span>Иссык-Куль.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="steps" id="chtotebiajdet" data-bar="2">
+                <img class="steps-ball max1024" src="img/ball2.svg" alt="">
+                <img class="steps-piramide max1024" src="img/piramide.svg" alt="">
+                <img src="img/first-left-border.png" class="first-left-border" alt="">
+                <div class="steps__container _container">
+                    <div class="steps__body">
+                        <div class="steps__box" data-original="img/river.png">
+                            <h2 class="_section-title _section-title-white">Что тебя ждёт?</h2>
+                            <p>4 дня погружения в атмосферу
+                                новых возможностей для развития <img src="img/rocket.svg" alt=""></p>
+                            <div class="steps__box-steps">
+                                <div class="item-step _hover">
+                                    <div class="item-step__image">
+                                        <img src="img/1x1.png" data-src="img/ring.png" alt="">
+                                    </div>
+                                    <div class="item-step__content">
+                                        <label><span>Приглашенные</span> спикеры <img src="img/star.svg" alt=""></label>
+                                    </div>
+                                </div>
+                                <div class="item-step _hover">
+                                    <div class="item-step__image">
+                                        <img src="img/1x1.png" data-src="img/starr.png" alt="">
+                                    </div>
+                                    <div class="item-step__content">
+                                        <label>Более <span>300</span> партнеров в одном месте <img src="img/star.svg"
+                                                alt=""></label>
+                                    </div>
+                                </div>
+                                <div class="item-step _hover">
+                                    <div class="item-step__image">
+                                        <img src="img/1x1.png" data-src="img/comm.png" alt="">
+                                    </div>
+                                    <div class="item-step__content">
+                                        <label><span>Масштабный</span> нетворкинг и обмен опытом <img src="img/star.svg"
+                                                alt=""></label>
+                                    </div>
+                                </div>
+                                <div class="item-step _hover">
+                                    <div class="item-step__image">
+                                        <img src="img/1x1.png" data-src="img/cep.png" alt="">
+                                    </div>
+                                    <div class="item-step__content">
+                                        <label><span>Традиции</span> и единение <img src="img/star.svg" alt=""></label>
+                                    </div>
+                                </div>
+                                <div class="item-step _hover">
+                                    <div class="item-step__image">
+                                        <img src="img/1x1.png" data-src="img/imgic.svg" alt="">
+                                    </div>
+                                    <div class="item-step__content">
+                                        <label><span>Крутая</span> локация и место силы <img src="img/1x1.png"
+                                                data-src="img/star.svg" alt=""></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="persons fixed-element" id="spikers" data-bar="3">
+                <img src="img/persons-kupol-top.png" class="kupol-ptop" alt="">
+                <img src="img/persons-kupol-bottom.png" class="kupol-pbottom" alt="">
+                <img class="persons-left-gradinet" src="img/1x1.png" data-src="img/persons-left-gradinet.png" alt="">
+                <img class="persons-right-gradinet" src="img/1x1.png" data-src="img/persons-right-gradinet.png" alt="">
+                <img class="cube max1024" src="img/1x1.png" data-src="img/cube.svg" alt="">
+                <img class="persons-shaiba max1024 " src="img/1x1.png" data-src="img/shaiba.png" alt="">
+                <img class="persons-piramide max1024" src="img/1x1.png" data-src="img/piramide.svg" alt="">
+                <div class="persons__container ">
+                    <div class="persons__body">
+                        <h2 class="persons__titles">
+                            <div class="titles">
+                                <span>Хедлайнеры</span>
+                                <span>события</span>
+                            </div>
+                            <div class="titles2">
+                                <span>Спикеры</span>
+                                <span>события</span>
+                            </div>
+                        </h2>
+                        <div class="persons__subtitle">
+                            <p>Свайпай вправо чтобы познакомься со всеми спикерами события</p>
+                            <div class="persons__slider-button">
+                                <button class="persons__slider-button-prev">
+                                    <img src="img/right-arrow.svg" alt="">
+                                </button>
+                                <button class="persons__slider-button-next _active">
+                                    <img src="img/right-arrow.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="persons__grid">
+                            <div class="persons__grid-body">
+                                <div class="person swiper-slide scroll-start">
+                                    <div class="person__image">
+                                        <img src="img/alexei-suhodoev.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Алексей Суходоев</span><img src="img/persons-svg.svg"
+                                                alt=""></label>
+                                        <ol>
+                                            <li>Представитель правления SWC</li>
+                                            <li>Руководитель отделения распространения</li>
+                                            <li class="min560">Успешный частный инвестор более 5 лет, криптоэнтузиаст,
+                                                традиционный
+                                                предприниматель более 10 лет, стратег, траблшутер</li>
+                                            <li class="max560">Успешный частный инвестор более 5 лет, криптоэнтузиаст
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide _noperson">
+                                    <div class="_noperson-text">Познакомься со всеми спикерами события</div>
+
+                                    <div class="_noperson-image">
+                                        <img src="img/right-arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide check-speekers">
+
+                                    <h2 class="persons__titles _section-title">Спикеры события</h2>
+                                    <div class="person__image">
+                                        <img src="img/patrila-ismailova.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Патила Исмаилова</span><img src="img/persons-svg.svg"
+                                                alt=""></label>
+                                        <ol>
+                                            <li>TOP эксперт SWC</li>
+                                            <li>Куратор Кыргызстана</li>
+                                            <li>С 2014 года в технологии SWC</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide">
+                                    <div class="person__image">
+                                        <img src="img/igor-nosov.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Игорь Носов</span><img src="img/persons-svg.svg" alt=""></label>
+                                        <ol>
+
+
+
+                                            <li>Спикер федеральных программ АО «Деловая среда» и Synergy Global Forum
+                                            </li>
+                                            <li> Финалист конкурса «Лидеры России»</li>
+                                            <li class="min560">Победитель конкурса «Лига Лекторов» от Российского
+                                                общества «Знание»</li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide">
+                                    <div class="person__image">
+                                        <img src="img/elena-libkind.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Елена Либкинд</span><img src="img/persons-svg.svg" alt=""></label>
+                                        <ol>
+                                            <li>Community architect SWC</li>
+                                            <li>Event-креатор</li>
+                                            <li>Кандидат экономических наук</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide">
+                                    <div class="person__image">
+                                        <img src="img/elizaveta-piatibratova.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Елизавета Пятибратова</span><img src="img/persons-svg.svg"
+                                                alt=""></label>
+                                        <ol>
+                                            <li>Project manager с опытом в крупнейших компаниях онлайн-образования</li>
+                                            <li class="min560">Средняя удовлетворенность участников образовательными
+                                                курсами
+                                                80%</li>
+                                            <li class="min560">TikTok 60К подписчиков без участия команды продюссеров
+                                            </li>
+                                            <li class="max560">TikTok 60К подписчиков без участия продюссеров</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide">
+                                    <div class="person__image">
+                                        <img src="img/irina-volkova.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Ирина Волкова</span><img src="img/persons-svg.svg" alt=""></label>
+                                        <ol>
+
+                                            <li>Представитель правления SWC</li>
+                                            <li class="min560">Руководитель международного отделения работы с
+                                                партнерами, региональными кураторами и региональными спикерами</li>
+                                            <li class="max560">Руководитель международного отделения работы с партнерами
+                                                SWC</li>
+                                            <li>Успешный частный инвестор более 20 лет</li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide">
+                                    <div class="person__image">
+                                        <img src="img/frantisek-solar.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Frantisek Solar</span><img src="img/persons-svg.svg"
+                                                alt=""></label>
+                                        <ol>
+                                            <li>Представитель правления SWC
+                                            </li>
+                                            <li>Руководитель международного отделения работы с партнерами
+                                                и топ экспертами
+                                            </li>
+                                            <li class="min560">Долгосрочный успешный инвестор и структурный строитель в
+                                                сетевом маркетинге</li>
+                                            <li class="max560">Долгосрочный успешный инвестор</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide">
+                                    <div class="person__image">
+                                        <img src="img/asel-sidikova.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Асель Сыдыкова</span><img src="img/persons-svg.svg" alt=""></label>
+                                        <ol>
+
+                                            <li>Основательница Компании "GBF"</li>
+                                            <li> Обучает известных политиков в Европе и влиятельнейших бизнесменов
+                                                Казахстана</li>
+                                            <li class="min560">Была признана лучшей женщиной спикером в Европе в 2014
+                                                году</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide ">
+                                    <div class="person__image">
+                                        <img src="img/alexandra-dassler.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Александра Дасслер</span><img src="img/persons-svg.svg"
+                                                alt=""></label>
+                                        <ol>
+                                            <li>Наставник “Высокие чеки в продажах” более 10 лет</li>
+                                            <li class="min560">Инвестор и крипто юрист более 10 лет</li>
+                                            <li class="max560">Инвестор и крипто юрист</li>
+
+                                            <li class="min560">Со-создатель инвест игры «Myinvestgame» за 6 месяцев
+                                                открыты представительства игропрактиков в 7
+                                                странах
+                                            </li>
+
+                                            <li class="max560"> Со-создатель инвест т-игры «Myinvestgame»</li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide scroll-end">
+                                    <div class="person__image">
+                                        <img src="img/elena-pichujkina.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Елена Пичужкина</span><img src="img/persons-svg.svg"
+                                                alt=""></label>
+                                        <ol>
+                                            <li>Community Lead SWC</li>
+                                            <li>Эксперт в сфере комьюнити-менеджмента</li>
+                                            <li class="min560">Организатор федеральных и региональных бизнес-мероприятий
+                                            </li>
+                                            <li class="max560">Организатор федеральных бизнес-мероприятий</li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="person swiper-slide ">
+                                    <div class="person__image">
+                                        <img src="img/yana.png" alt="">
+                                    </div>
+                                    <div class="person__info">
+                                        <label><span>Яна Горячкова</span><img src="img/persons-svg.svg" alt=""></label>
+                                        <ol>
+                                            <li>Разработала 15+ курсов в 10 нишах</li>
+                                            <li>Спикер ВУЗов и бизнес-конференций</li>
+                                            <li class="min560">Выпускница МГИМО / МИД России</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="programm" id="programma" data-bar="4">
+                <img src="img/persons-kupol-bottom.png" class="kupol-bottom" alt="">
+                <img class="piramide min768 max1024" src="img/1x1.png" data-src="img/piramide.svg" alt="">
+                <img class="piramide max768" src="img/1x1.png" data-src="img/piramide2.svg" alt="">
+                <div class="programm__container _container">
+                    <div class="programm__body">
+                        <h2 class="_section-title">Ты не забудешь никогда...</h2>
+                        <div class="programm__slider">
+                            <button class="programm__slider-prev">
+                                <img src="img/right-arrow.svg" alt="">
+                            </button>
+                            <div class="programm__slider-swiper swiper">
+                                <div class="programm__slider-wrapper swiper-wrapper">
+                                    <div class="programm__slider-slide swiper-slide _hover">
+                                        <div class="programm__slider-slide-body">
+                                            <img src="img/slider/wallpaperbetter9.png" alt="">
+                                            <div class="ok">
+                                                <img src="img/ok.svg" alt="">
+                                            </div>
+                                            <div class="programm__slider-slide-content">
+                                                Проживания в курортном отеле на берегу озера Иссык-Куль
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="programm__slider-slide swiper-slide _hover">
+                                        <div class="programm__slider-slide-body">
+                                            <img src="img/slider/wallpaperbetter10.png" alt="">
+                                            <div class="ok">
+                                                <img src="img/ok.svg" alt="">
+                                            </div>
+                                            <div class="programm__slider-slide-content">
+                                                Вкуснейшие блюда азиатской кухни - 3 раза в день
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="programm__slider-slide swiper-slide _hover">
+                                        <div class="programm__slider-slide-body">
+                                            <img src="img/slider/wallpaperbetter11.png" alt="">
+                                            <div class="ok">
+                                                <img src="img/ok.svg" alt="">
+                                            </div>
+                                            <div class="programm__slider-slide-content">
+                                                Утренние зарядки от мастера омолаживающей гимнастики
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="programm__slider-slide swiper-slide _hover">
+                                        <div class="programm__slider-slide-body">
+                                            <img src="img/slider/wallpaperbetter12.png" alt="">
+                                            <div class="ok">
+                                                <img src="img/ok.svg" alt="">
+                                            </div>
+                                            <div class="programm__slider-slide-content">
+                                                Мастер-классы от тренеров мирового уровня
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="programm__slider-slide swiper-slide _hover">
+                                        <div class="programm__slider-slide-body">
+                                            <img src="img/slider/wallpaperbetter13.png" alt="">
+                                            <div class="ok">
+                                                <img src="img/ok.svg" alt="">
+                                            </div>
+                                            <div class="programm__slider-slide-content">
+                                                Уникальная экскурсия и пикник в горах
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="programm__slider-slide swiper-slide _hover">
+                                        <div class="programm__slider-slide-body">
+                                            <img src="img/slider/wallpaperbetter14.png" alt="">
+                                            <div class="ok">
+                                                <img src="img/ok.svg" alt="">
+                                            </div>
+                                            <div class="programm__slider-slide-content">
+                                                Роскошный гала-ужин “Восточная сказка” с концертной программой
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="programm__slider-slide swiper-slide _hover">
+                                        <div class="programm__slider-slide-body">
+                                            <img src="img/slider/wallpaperbetter15.png" alt="">
+                                            <div class="ok">
+                                                <img src="img/ok.svg" alt="">
+                                            </div>
+                                            <div class="programm__slider-slide-content">
+                                                Красочные ритуалы и памятные подарки
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="programm__slider-slide swiper-slide _hover">
+                                        <div class="programm__slider-slide-body">
+                                            <img src="img/slider/wallpaperbetter16.png" alt="">
+                                            <div class="ok">
+                                                <img src="img/ok.svg" alt="">
+                                            </div>
+                                            <div class="programm__slider-slide-content">
+                                                Незабываемые встречи с партнерами и сказочные окрестности Иссык-Куля
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="programm__slider-next">
+                                <img src="img/right-arrow.svg" alt="">
+                            </button>
+                        </div>
+                        <a class="button-link _hover" id="tinezabudesh"
+                            href="files/Программа_сабытия_Иссык_Куль.pdf" download>
+                            <img src="img/grad-bgc.png" alt="">
+                            <img class="programm__watch-arrow before" src="img/btn-left.svg" alt="">
+                            <img class="programm__watch-arrow after" src="img/btn-right.svg" alt="">
+                            <button class="programm__watch _btn-gradient">
+                                <span>Смотреть программу</span>
+                                <svg width="25" height="28" viewBox="0 0 25 28" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M16.6534 2.49687H13.8374V1.08885C13.8374 0.96437 13.788 0.844992 13.6999 0.756973C13.6119 0.668955 13.4925 0.619507 13.3681 0.619507C13.2436 0.619507 13.1242 0.668955 13.0362 0.756973C12.9482 0.844992 12.8987 0.96437 12.8987 1.08885V2.49687H6.32798V1.08885C6.32798 0.96437 6.27853 0.844992 6.19051 0.756973C6.10249 0.668955 5.98311 0.619507 5.85864 0.619507C5.73416 0.619507 5.61478 0.668955 5.52676 0.756973C5.43875 0.844992 5.3893 0.96437 5.3893 1.08885V2.49687H2.57326C1.95111 2.49761 1.35465 2.74509 0.914718 3.18502C0.474788 3.62495 0.227308 4.22141 0.226562 4.84356V17.0464C0.227308 17.6685 0.474788 18.265 0.914718 18.7049C1.35465 19.1449 1.95111 19.3923 2.57326 19.3931H16.6534C17.2757 19.3926 17.8723 19.1452 18.3123 18.7052C18.7522 18.2652 18.9996 17.6686 19.0001 17.0464V4.84356C18.9996 4.22133 18.7522 3.62473 18.3123 3.18475C17.8723 2.74476 17.2757 2.49736 16.6534 2.49687ZM18.0615 17.0464C18.0615 17.4198 17.9131 17.778 17.6491 18.042C17.385 18.3061 17.0269 18.4544 16.6534 18.4544H2.57326C2.19983 18.4544 1.8417 18.3061 1.57764 18.042C1.31359 17.778 1.16524 17.4198 1.16524 17.0464V9.06762H18.0615V17.0464ZM18.0615 8.12894H1.16524V4.84356C1.16524 4.06634 1.79416 3.43554 2.57326 3.43554H5.3893V4.84356C5.3893 4.96804 5.43875 5.08742 5.52676 5.17544C5.61478 5.26345 5.73416 5.3129 5.85864 5.3129C5.98311 5.3129 6.10249 5.26345 6.19051 5.17544C6.27853 5.08742 6.32798 4.96804 6.32798 4.84356V3.43554H12.8987V4.84356C12.8987 4.96804 12.9482 5.08742 13.0362 5.17544C13.1242 5.26345 13.2436 5.3129 13.3681 5.3129C13.4925 5.3129 13.6119 5.26345 13.6999 5.17544C13.788 5.08742 13.8374 4.96804 13.8374 4.84356V3.43554H16.6534C17.0269 3.43554 17.385 3.58389 17.6491 3.84794C17.9131 4.112 18.0615 4.47013 18.0615 4.84356V8.12894Z"
-                                        fill="white" />
+                                        d="M6.75 6.75L12.5 6.75M6.75 18.25H11.0625M6.75 12.5L15.375 12.5M21.125 12.5V9.625C21.125 5.55914 21.125 3.5262 19.8619 2.2631C18.5988 1 16.5659 1 12.5 1H9.625C5.55914 1 3.5262 1 2.2631 2.2631C1 3.5262 1 5.55914 1 9.625V18.25C1 22.3159 1 24.3488 2.2631 25.6119C3.5262 26.875 5.55914 26.875 9.625 26.875H11.0625M24 26.875L21.8438 24.7188M22.5625 21.8438C22.5625 23.8285 20.9535 25.4375 18.9688 25.4375C16.984 25.4375 15.375 23.8285 15.375 21.8438C15.375 19.859 16.984 18.25 18.9688 18.25C20.9535 18.25 22.5625 19.859 22.5625 21.8438Z"
+                                        stroke="white" stroke-linecap="round" />
                                 </svg>
                             </button>
                         </a>
-                        <div class="data-gradient">26.09 - 30.09 2022</div>
-                    </div>
-                    <div class="first__image">
-                        <div class="first__image-body">
-                            <img class="first__image-main" src="img/first-bgc.png" alt="">
-                            <div class="first__image-img">
-                                <img class="animate__animated animate__pulse animate__infinite	infinite"
-                                    src="img/1x1.png" data-src="img/first-svg.svg" alt="">
-                            </div>
-                            <div class="first__image-content">
-                                Сентябрь дарит отличные возможности для партнёров SWC 💯.
-                                <br><br>
-                                Ждем вас в <span>уникальном</span> месте силы Киргизии на озере-легенде
-                                <span>Иссык-Куль.</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="steps" id="chtotebiajdet">
-            <div class="steps__container _container">
-                <div class="steps__body">
-                    <div class="steps__box" data-original="img/river.png">
-                        <h2 class="_section-title _section-title-white">Что тебя ждёт?</h2>
-                        <p>4 дня погружения в атмосферу
-                            новых возможностей для развития <img src="img/rocket.svg" alt=""></p>
-                        <div class="steps__box-steps">
-                            <div class="item-step _hover">
-                                <div class="item-step__image">
-                                    <img src="img/1x1.png" data-src="img/ring.png" alt="">
-                                </div>
-                                <div class="item-step__content">
-                                    <label><span>Приглашенные</span> спикеры <img src="img/star.svg" alt=""></label>
-                                </div>
-                            </div>
-                            <div class="item-step _hover">
-                                <div class="item-step__image">
-                                    <img src="img/1x1.png" data-src="img/starr.png" alt="">
-                                </div>
-                                <div class="item-step__content">
-                                    <label>Более <span>300</span> партнеров в одном месте <img src="img/star.svg"
-                                            alt=""></label>
-                                </div>
-                            </div>
-                            <div class="item-step _hover">
-                                <div class="item-step__image">
-                                    <img src="img/1x1.png" data-src="img/comm.png" alt="">
-                                </div>
-                                <div class="item-step__content">
-                                    <label><span>Масштабный</span> нетворкинг и обмен опытом <img src="img/star.svg"
-                                            alt=""></label>
-                                </div>
-                            </div>
-                            <div class="item-step _hover">
-                                <div class="item-step__image">
-                                    <img src="img/1x1.png" data-src="img/cep.png" alt="">
-                                </div>
-                                <div class="item-step__content">
-                                    <label>Традиции и единение <img src="img/star.svg" alt=""></label>
-                                </div>
-                            </div>
-                            <div class="item-step _hover">
-                                <div class="item-step__image">
-                                    <img src="img/1x1.png" data-src="img/imgic.svg" alt="">
-                                </div>
-                                <div class="item-step__content">
-                                    <label><span>Крутая</span> локация и место силы <img src="img/1x1.png"
-                                            data-src="img/star.svg" alt=""></label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="persons" id="spikers">
-            <img class="persons-left-gradinet" src="img/1x1.png" data-src="img/persons-left-gradinet.png" alt="">
-            <img class="persons-right-gradinet" src="img/1x1.png" data-src="img/persons-right-gradinet.png" alt="">
-            <img class="cube" src="img/1x1.png" data-src="img/cube.svg" alt="">
-            <div class="persons__container ">
-                <div class="persons__body">
-                    <h2 class="persons__titles _container">
-                        <div class="titles"><span>Хедлайнеры</span><span>Спикеры</span></div>
-                        <span>события</span>
-                    </h2>
-                    <div class="persons__subtitle">
-                        <p>Свайпай вправо чтобы познакомься со всеми спикерами события</p>
-                        <div class="persons__slider-button">
-                            <button class="persons__slider-button-prev">
-                                <img src="img/right-arrow.svg" alt="">
-                            </button>
-                            <button class="persons__slider-button-next _active">
-                                <img src="img/right-arrow.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="persons__grid">
-                        <div class="persons__grid-body">
-                            <div class="person swiper-slide scroll-start">
-                                <div class="person__image">
-                                    <img src="img/alexei-suhodoev.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Алексей Суходоев</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li>Представитель Правления Руководитель отделения распространения SWC</li>
-                                        <li class="min560">Успешный частный инвестор более 5 лет, криптоэнтузиаст, традиционный
-                                            предприниматель более 10 лет, стратег, траблшутер</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide _noperson">
-                                <div class="_noperson-text">Познакомься со всеми спикерами события</div>
-
-                                <div class="_noperson-image">
-                                    <img src="img/right-arrow.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="person swiper-slide check-speekers">
-                                <div class="person__image">
-                                    <img src="img/patrila-ismailova.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Патила Исмаилова</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li>TOP эксперт SWC</li>
-                                        <li>Куратор Кыргызстана</li>
-                                        <li>С 2014 года в технологии SWCить</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide">
-                                <div class="person__image">
-                                    <img src="img/igor-nosov.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Игорь Носов</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li class="min560">Представитель Правления SWC, Руководитель Международного отделения
-                                            работы с
-                                            партнерами SWC
-                                        </li>
-                                        <li>Успешный частный инвестор более 20 лет, опытный управленец, сетевой
-                                            лидер более
-                                            25 лет, стратег, международный спикер</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide">
-                                <div class="person__image">
-                                    <img src="img/elena-libkind.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Елена Либкинд</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li>Community architect SWC</li>
-                                        <li>Идеолог построения личного бренда для персон</li>
-                                        <li>Эвент-креатор</li>
-                                        <li class="min560">Кандидат экономических наук</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide">
-                                <div class="person__image">
-                                    <img src="img/elizaveta-piatibratova.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Елизавета Пятибратова</span><img src="img/persons-svg.svg"
-                                            alt=""></label>
-                                    <ol>
-                                        <li>Project manager с опытом в крупнейших компаниях онлайн-образования</li>
-                                        <li class="min560">Средняя удовлетворенность участников образовательными курсами 80%</li>
-                                        <li>TikTok 60К подписчиков без участия команды продюссеров</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide">
-                                <div class="person__image">
-                                    <img src="img/irina-volkova.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Ирина Волкова</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li class="min560">Представитель Правления SWC, Руководитель Международного отделения
-                                            работы с
-                                            партнерами SWC
-                                        </li>
-                                        <li>Успешный частный инвестор более 20 лет, опытный управленец, сетевой
-                                            лидер более
-                                            25 лет, стратег, международный спикер</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide">
-                                <div class="person__image">
-                                    <img src="img/frantisek-solar.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Frantisek Solar</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li class="min560">Онлайн и оффлайн предприниматель, инвестор и крипто юрист, опыт 10+ лет</li>
-                                        <li>Со-создатель инвест т-игры «Myinvestgame» за 6 месяцев уже открыто в 7
-                                            странах
-                                            представительства игропрактиков</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide">
-                                <div class="person__image">
-                                    <img src="img/asel-sidikova.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Асель Сыдыкова</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li class="min560">В 2015 году привезла культового героя боевиков Жан Клод Ван Дамма, Экс
-                                            Президента Феррари и Мойру Форбс в Алматы.
-                                        </li>
-                                        <li>Была признана лучшей - женщиной спикером в Европе в 2014 году</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide ">
-                                <div class="person__image">
-                                    <img src="img/alexandra-dassler.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Александра Дасслер</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li class="min560">Онлайн и оффлайн предприниматель, инвестор и крипто юрист, опыт 10+ лет</li>
-                                        <li>Со-создатель инвест т-игры «Myinvestgame» за 6 месяцев уже открыто в 7
-                                            странах
-                                            представительства игропрактиков</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide scroll-end">
-                                <div class="person__image">
-                                    <img src="img/elena-pichujkina.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Елена Пичужкина</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li class="max560">Community Lead SWC</li>
-                                        <li class="max560">Эксперт в сфере комьюнити-менеджмента</li>
-                                        <li class="max560">Наставник Community University</li>
-                                        <li class="min560">Community Lead SWC, Эксперт в сфере комьюнити-менеджмента, Организатор федеральных и региональных бизнес-мероприятий, Наставник Community University</li>
-                                        <li class="min560">«Доцент кафедры «Политической социологии и социальных технологий» Российского гуманитарного государственного
-                                        университета»</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="person swiper-slide ">
-                                <div class="person__image">
-                                    <img src="img/yana.png" alt="">
-                                </div>
-                                <div class="person__info">
-                                    <label><span>Яна Горячкова</span><img src="img/persons-svg.svg" alt=""></label>
-                                    <ol>
-                                        <li class="min560">Разработка 15+ курсов в 10 нишах</li>
-                                        <li class="min560">Спикер ВУЗов и бизнес-конференций</li>
-                                        <li>Выпускница МГМО / МИЛ России</li>
-                                        <li>Есть друзья на всех континентах кроме Антарктиды</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="programm" id="programma">
-            <img class="piramide min768" src="img/1x1.png" data-src="img/piramide.svg" alt="">
-            <img class="piramide max768" src="img/1x1.png" data-src="img/piramide2.svg" alt="">
-            <div class="programm__container _container">
-                <div class="programm__body">
-                    <h2 class="_section-title">Ты не забудешь никогда...</h2>
-                    <div class="programm__slider">
-                        <button class="programm__slider-prev">
-                            <img src="img/right-arrow.svg" alt="">
-                        </button>
-                        <div class="programm__slider-swiper swiper">
-                            <div class="programm__slider-wrapper swiper-wrapper">
-                                <div class="programm__slider-slide swiper-slide _hover">
-                                    <div class="programm__slider-slide-body">
-                                        <img src="img/slider/wallpaperbetter9.png" alt="">
-                                        <div class="ok">
-                                            <img src="img/ok.svg" alt="">
-                                        </div>
-                                        <div class="programm__slider-slide-content">
-                                            Проживания в курортном отеле на берегу озера Иссык-Куль
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="programm__slider-slide swiper-slide _hover">
-                                    <div class="programm__slider-slide-body">
-                                        <img src="img/slider/wallpaperbetter10.png" alt="">
-                                        <div class="ok">
-                                            <img src="img/ok.svg" alt="">
-                                        </div>
-                                        <div class="programm__slider-slide-content">
-                                            Вкуснейшие блюда азиатской кухни - 3 раза в день
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="programm__slider-slide swiper-slide _hover">
-                                    <div class="programm__slider-slide-body">
-                                        <img src="img/slider/wallpaperbetter11.png" alt="">
-                                        <div class="ok">
-                                            <img src="img/ok.svg" alt="">
-                                        </div>
-                                        <div class="programm__slider-slide-content">
-                                            Утренние зарядки от мастера омолаживающей гимнастики
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="programm__slider-slide swiper-slide _hover">
-                                    <div class="programm__slider-slide-body">
-                                        <img src="img/slider/wallpaperbetter12.png" alt="">
-                                        <div class="ok">
-                                            <img src="img/ok.svg" alt="">
-                                        </div>
-                                        <div class="programm__slider-slide-content">
-                                            Мастер-классы от тренеров мирового уровня
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="programm__slider-slide swiper-slide _hover">
-                                    <div class="programm__slider-slide-body">
-                                        <img src="img/slider/wallpaperbetter13.png" alt="">
-                                        <div class="ok">
-                                            <img src="img/ok.svg" alt="">
-                                        </div>
-                                        <div class="programm__slider-slide-content">
-                                            Уникальная экскурсия и пикник в горах
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="programm__slider-slide swiper-slide _hover">
-                                    <div class="programm__slider-slide-body">
-                                        <img src="img/slider/wallpaperbetter14.png" alt="">
-                                        <div class="ok">
-                                            <img src="img/ok.svg" alt="">
-                                        </div>
-                                        <div class="programm__slider-slide-content">
-                                            Роскошный гала-ужин “Восточная сказка” с концертной программой
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="programm__slider-slide swiper-slide _hover">
-                                    <div class="programm__slider-slide-body">
-                                        <img src="img/slider/wallpaperbetter15.png" alt="">
-                                        <div class="ok">
-                                            <img src="img/ok.svg" alt="">
-                                        </div>
-                                        <div class="programm__slider-slide-content">
-                                            Красочные ритуалы и памятные подарки
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="programm__slider-slide swiper-slide _hover">
-                                    <div class="programm__slider-slide-body">
-                                        <img src="img/slider/wallpaperbetter16.png" alt="">
-                                        <div class="ok">
-                                            <img src="img/ok.svg" alt="">
-                                        </div>
-                                        <div class="programm__slider-slide-content">
-                                            Незабываемые встречи с партнерами и сказочные окрестности Иссык-Куля
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="programm__slider-next">
-                            <img src="img/right-arrow.svg" alt="">
-                        </button>
-                    </div>
-                    <a id="tinezabudesh" href="files/Программа_мероприятия_Иссык_Куль.pdf" download>
-                        <button class="programm__watch _btn-gradient _hover">
-                            <span>Смотреть программу</span>
-                            <svg width="25" height="28" viewBox="0 0 25 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.75 6.75L12.5 6.75M6.75 18.25H11.0625M6.75 12.5L15.375 12.5M21.125 12.5V9.625C21.125 5.55914 21.125 3.5262 19.8619 2.2631C18.5988 1 16.5659 1 12.5 1H9.625C5.55914 1 3.5262 1 2.2631 2.2631C1 3.5262 1 5.55914 1 9.625V18.25C1 22.3159 1 24.3488 2.2631 25.6119C3.5262 26.875 5.55914 26.875 9.625 26.875H11.0625M24 26.875L21.8438 24.7188M22.5625 21.8438C22.5625 23.8285 20.9535 25.4375 18.9688 25.4375C16.984 25.4375 15.375 23.8285 15.375 21.8438C15.375 19.859 16.984 18.25 18.9688 18.25C20.9535 18.25 22.5625 19.859 22.5625 21.8438Z"
-                                    stroke="white" stroke-linecap="round" />
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="video" id="videopriglashenie">
-            <img class="video-left-gradient" src="img/1x1.png" data-src="img/video-left-gradinet.png" alt="">
-            <img class="video-right-gradient" src="img/1x1.png" data-src="img/video-right-gradinet.png" alt="">
+            </section>
+            <section class="video" id="videopriglashenie" data-bar="5">
+                <img src="img/kupol-full.png" class="kupol-full" alt="">
+                <img class="video-left-gradient" src="img/1x1.png" data-src="img/video-left-gradinet.png" alt="">
+                <img class="video-right-gradient" src="img/1x1.png" data-src="img/video-right-gradinet.png" alt="">
                 <div class="video__container _container">
                     <div class="video__body">
                         <img class="video-gradient" src="img/1x1.png" data-src="img/video-gradient.png" alt="">
-                        <img class="video-ball" src="img/1x1.png" data-src="img/ball2.svg" alt="">
+                        <img class="video-ball" src="img/ball2.svg" alt="">
                         <img class="video-ball2" src="img/1x1.png" data-src="img/video-ball2.svg" alt="">
                         <div class="video__box">
                             <div class="video__box-content">
@@ -920,259 +995,246 @@
                                 <p>Сентябрь дарит отличные возможности для партнёров SWC</p>
                             </div>
                             <div class="video__box-video">
-                                <img src="img/1x1.png" data-src="img/video.svg" alt="">
+                                <img src="img/1x1.png" data-src="img/video.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
-        <section class="pricing" id="oplata">
-            <img class="elipse-pricing" src="img/1x1.png" data-src="img/elipse2.svg" alt="">
-            <img class="elipse-pricing2" src="img/1x1.png" data-src="img/elipse2.1.svg" alt="">
-            <div class="pricing__container _container">
-                <div class="pricing__body">
-                    <h2 class="_section-title">Стоимость участия </h2>
-                    <p class="pricing__descr">Вы можете получить <span>уникальную скидку</span> на участие в
-                        мероприятии, если выполните одно
-                        из условий</p>
-                    <div class="pricing__box">
-                        <div class="pricing__box-item">
-                            <h3>350$</h3>
-                            <label>Условие получения скидки:</label>
-                            <ol>
-                                <li>С <span>1 августа</span> по <span>10 сентября</span> открыть рассрочку лично, не
-                                    менее чем на <span>100 $</span> в месяц по
-                                    текущему дисконту и доплатить за
-                                    участие</li>
-                            </ol>
-                            <a href="https://new.skyway.capital/auth/login">
-                                <button class="_btn-gradient">
-                                    <span>Забронировать место</span>
-                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16.6534 2.49687H13.8374V1.08885C13.8374 0.96437 13.788 0.844992 13.6999 0.756973C13.6119 0.668955 13.4925 0.619507 13.3681 0.619507C13.2436 0.619507 13.1242 0.668955 13.0362 0.756973C12.9482 0.844992 12.8987 0.96437 12.8987 1.08885V2.49687H6.32798V1.08885C6.32798 0.96437 6.27853 0.844992 6.19051 0.756973C6.10249 0.668955 5.98311 0.619507 5.85864 0.619507C5.73416 0.619507 5.61478 0.668955 5.52676 0.756973C5.43875 0.844992 5.3893 0.96437 5.3893 1.08885V2.49687H2.57326C1.95111 2.49761 1.35465 2.74509 0.914718 3.18502C0.474788 3.62495 0.227308 4.22141 0.226562 4.84356V17.0464C0.227308 17.6685 0.474788 18.265 0.914718 18.7049C1.35465 19.1449 1.95111 19.3923 2.57326 19.3931H16.6534C17.2757 19.3926 17.8723 19.1452 18.3123 18.7052C18.7522 18.2652 18.9996 17.6686 19.0001 17.0464V4.84356C18.9996 4.22133 18.7522 3.62473 18.3123 3.18475C17.8723 2.74476 17.2757 2.49736 16.6534 2.49687ZM18.0615 17.0464C18.0615 17.4198 17.9131 17.778 17.6491 18.042C17.385 18.3061 17.0269 18.4544 16.6534 18.4544H2.57326C2.19983 18.4544 1.8417 18.3061 1.57764 18.042C1.31359 17.778 1.16524 17.4198 1.16524 17.0464V9.06762H18.0615V17.0464ZM18.0615 8.12894H1.16524V4.84356C1.16524 4.06634 1.79416 3.43554 2.57326 3.43554H5.3893V4.84356C5.3893 4.96804 5.43875 5.08742 5.52676 5.17544C5.61478 5.26345 5.73416 5.3129 5.85864 5.3129C5.98311 5.3129 6.10249 5.26345 6.19051 5.17544C6.27853 5.08742 6.32798 4.96804 6.32798 4.84356V3.43554H12.8987V4.84356C12.8987 4.96804 12.9482 5.08742 13.0362 5.17544C13.1242 5.26345 13.2436 5.3129 13.3681 5.3129C13.4925 5.3129 13.6119 5.26345 13.6999 5.17544C13.788 5.08742 13.8374 4.96804 13.8374 4.84356V3.43554H16.6534C17.0269 3.43554 17.385 3.58389 17.6491 3.84794C17.9131 4.112 18.0615 4.47013 18.0615 4.84356V8.12894Z" />
-                                        <defs>
-                                            <linearGradient id="linear-data" x1="0.241211" y1="17.8396" x2="15.1519"
-                                                y2="-0.632826" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#58ABF7" />
-                                                <stop offset="0.213542" stop-color="#4079DB" />
-                                                <stop offset="0.463542" stop-color="#826CDE" />
-                                                <stop offset="0.713542" stop-color="#BB77C2" />
-                                                <stop offset="1" stop-color="#FBDBAA" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="pricing__box-item">
-                            <h3>550$</h3>
-                            <label>Полная стоимость участия</label>
-                            <ol>
+            </section>
+            <section class="pricing" id="oplata" data-bar="6">
+                <img class="pricing-shaiba max1024" data-delay="1" src="img/1x1.png" data-src="img/shaiba-top.png"
+                    alt="">
+                <img class="elipse-pricing" src="img/1x1.png" data-src="img/elipse2.svg" alt="">
+                <img class="elipse-pricing2" src="img/1x1.png" data-src="img/elipse2.1.svg" alt="">
+                <div class="pricing__container _container">
+                    <div class="pricing__body">
+                        <h2 class="_section-title">Стоимость участия </h2>
+                        <p class="pricing__descr">Вы можете получить <span>уникальную скидку</span> на участие в
+                            мероприятии, если выполните одно
+                            из условий</p>
+                        <div class="pricing__box">
+                            <div class="pricing__box-item">
+                                <h3>350$</h3>
+                                <label>Условие получения скидки:</label>
+                                <ol>
+                                    <li>С <span>1 августа</span> по <span>10 сентября</span> открыть рассрочку лично, не
+                                        менее чем на <span>100 $</span> в месяц по
+                                        текущему дисконту и доплатить за
+                                        участие</li>
+                                </ol>
+                                <a class="button-link" href="https://new.skyway.capital/auth/login">
+                                    <img src="img/grad-bgc.png" alt="">
+                                    <button class="_btn-gradient">
+                                        <span>Забронировать место</span>
+                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.6534 2.49687H13.8374V1.08885C13.8374 0.96437 13.788 0.844992 13.6999 0.756973C13.6119 0.668955 13.4925 0.619507 13.3681 0.619507C13.2436 0.619507 13.1242 0.668955 13.0362 0.756973C12.9482 0.844992 12.8987 0.96437 12.8987 1.08885V2.49687H6.32798V1.08885C6.32798 0.96437 6.27853 0.844992 6.19051 0.756973C6.10249 0.668955 5.98311 0.619507 5.85864 0.619507C5.73416 0.619507 5.61478 0.668955 5.52676 0.756973C5.43875 0.844992 5.3893 0.96437 5.3893 1.08885V2.49687H2.57326C1.95111 2.49761 1.35465 2.74509 0.914718 3.18502C0.474788 3.62495 0.227308 4.22141 0.226562 4.84356V17.0464C0.227308 17.6685 0.474788 18.265 0.914718 18.7049C1.35465 19.1449 1.95111 19.3923 2.57326 19.3931H16.6534C17.2757 19.3926 17.8723 19.1452 18.3123 18.7052C18.7522 18.2652 18.9996 17.6686 19.0001 17.0464V4.84356C18.9996 4.22133 18.7522 3.62473 18.3123 3.18475C17.8723 2.74476 17.2757 2.49736 16.6534 2.49687ZM18.0615 17.0464C18.0615 17.4198 17.9131 17.778 17.6491 18.042C17.385 18.3061 17.0269 18.4544 16.6534 18.4544H2.57326C2.19983 18.4544 1.8417 18.3061 1.57764 18.042C1.31359 17.778 1.16524 17.4198 1.16524 17.0464V9.06762H18.0615V17.0464ZM18.0615 8.12894H1.16524V4.84356C1.16524 4.06634 1.79416 3.43554 2.57326 3.43554H5.3893V4.84356C5.3893 4.96804 5.43875 5.08742 5.52676 5.17544C5.61478 5.26345 5.73416 5.3129 5.85864 5.3129C5.98311 5.3129 6.10249 5.26345 6.19051 5.17544C6.27853 5.08742 6.32798 4.96804 6.32798 4.84356V3.43554H12.8987V4.84356C12.8987 4.96804 12.9482 5.08742 13.0362 5.17544C13.1242 5.26345 13.2436 5.3129 13.3681 5.3129C13.4925 5.3129 13.6119 5.26345 13.6999 5.17544C13.788 5.08742 13.8374 4.96804 13.8374 4.84356V3.43554H16.6534C17.0269 3.43554 17.385 3.58389 17.6491 3.84794C17.9131 4.112 18.0615 4.47013 18.0615 4.84356V8.12894Z" />
+                                            <defs>
+                                                <linearGradient id="linear-data" x1="0.241211" y1="17.8396" x2="15.1519"
+                                                    y2="-0.632826" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#58ABF7" />
+                                                    <stop offset="0.213542" stop-color="#4079DB" />
+                                                    <stop offset="0.463542" stop-color="#826CDE" />
+                                                    <stop offset="0.713542" stop-color="#BB77C2" />
+                                                    <stop offset="1" stop-color="#FBDBAA" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="pricing__box-item">
+                                <h3>550$</h3>
+                                <label>Полная стоимость участия</label>
+                                <ol>
 
-                            </ol>
-                            <a href="https://new.skyway.capital/auth/login">
-                                <button class="_btn-gradient">
-                                    <span>Забронировать место</span>
-                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16.6534 2.49687H13.8374V1.08885C13.8374 0.96437 13.788 0.844992 13.6999 0.756973C13.6119 0.668955 13.4925 0.619507 13.3681 0.619507C13.2436 0.619507 13.1242 0.668955 13.0362 0.756973C12.9482 0.844992 12.8987 0.96437 12.8987 1.08885V2.49687H6.32798V1.08885C6.32798 0.96437 6.27853 0.844992 6.19051 0.756973C6.10249 0.668955 5.98311 0.619507 5.85864 0.619507C5.73416 0.619507 5.61478 0.668955 5.52676 0.756973C5.43875 0.844992 5.3893 0.96437 5.3893 1.08885V2.49687H2.57326C1.95111 2.49761 1.35465 2.74509 0.914718 3.18502C0.474788 3.62495 0.227308 4.22141 0.226562 4.84356V17.0464C0.227308 17.6685 0.474788 18.265 0.914718 18.7049C1.35465 19.1449 1.95111 19.3923 2.57326 19.3931H16.6534C17.2757 19.3926 17.8723 19.1452 18.3123 18.7052C18.7522 18.2652 18.9996 17.6686 19.0001 17.0464V4.84356C18.9996 4.22133 18.7522 3.62473 18.3123 3.18475C17.8723 2.74476 17.2757 2.49736 16.6534 2.49687ZM18.0615 17.0464C18.0615 17.4198 17.9131 17.778 17.6491 18.042C17.385 18.3061 17.0269 18.4544 16.6534 18.4544H2.57326C2.19983 18.4544 1.8417 18.3061 1.57764 18.042C1.31359 17.778 1.16524 17.4198 1.16524 17.0464V9.06762H18.0615V17.0464ZM18.0615 8.12894H1.16524V4.84356C1.16524 4.06634 1.79416 3.43554 2.57326 3.43554H5.3893V4.84356C5.3893 4.96804 5.43875 5.08742 5.52676 5.17544C5.61478 5.26345 5.73416 5.3129 5.85864 5.3129C5.98311 5.3129 6.10249 5.26345 6.19051 5.17544C6.27853 5.08742 6.32798 4.96804 6.32798 4.84356V3.43554H12.8987V4.84356C12.8987 4.96804 12.9482 5.08742 13.0362 5.17544C13.1242 5.26345 13.2436 5.3129 13.3681 5.3129C13.4925 5.3129 13.6119 5.26345 13.6999 5.17544C13.788 5.08742 13.8374 4.96804 13.8374 4.84356V3.43554H16.6534C17.0269 3.43554 17.385 3.58389 17.6491 3.84794C17.9131 4.112 18.0615 4.47013 18.0615 4.84356V8.12894Z" />
-                                        <defs>
-                                            <linearGradient id="linear-data" x1="0.241211" y1="17.8396" x2="15.1519"
-                                                y2="-0.632826" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#58ABF7" />
-                                                <stop offset="0.213542" stop-color="#4079DB" />
-                                                <stop offset="0.463542" stop-color="#826CDE" />
-                                                <stop offset="0.713542" stop-color="#BB77C2" />
-                                                <stop offset="1" stop-color="#FBDBAA" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="pricing__box-item">
-                            <h3>250$</h3>
-                            <label>Условие получения скидки:</label>
-                            <ol>
-                                <li>С <span>1 августа</span> по <span>10 сентября</span> открыть рассрочку лично, не
-                                    менее чем на <span>100$</span> в месяц
-                                </li>
-                                <li>+привлечь <span>2 партнеров</span> в первую линию с рассрочкой не менее <span>100
-                                        $</span> в месяц по текущему
-                                    дисконту и доплатить за участие.</li>
-                            </ol>
-                            <a href="https://new.skyway.capital/auth/login">
-                                <button class="_btn-gradient">
-                                    <span>Забронировать место</span>
-                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16.6534 2.49687H13.8374V1.08885C13.8374 0.96437 13.788 0.844992 13.6999 0.756973C13.6119 0.668955 13.4925 0.619507 13.3681 0.619507C13.2436 0.619507 13.1242 0.668955 13.0362 0.756973C12.9482 0.844992 12.8987 0.96437 12.8987 1.08885V2.49687H6.32798V1.08885C6.32798 0.96437 6.27853 0.844992 6.19051 0.756973C6.10249 0.668955 5.98311 0.619507 5.85864 0.619507C5.73416 0.619507 5.61478 0.668955 5.52676 0.756973C5.43875 0.844992 5.3893 0.96437 5.3893 1.08885V2.49687H2.57326C1.95111 2.49761 1.35465 2.74509 0.914718 3.18502C0.474788 3.62495 0.227308 4.22141 0.226562 4.84356V17.0464C0.227308 17.6685 0.474788 18.265 0.914718 18.7049C1.35465 19.1449 1.95111 19.3923 2.57326 19.3931H16.6534C17.2757 19.3926 17.8723 19.1452 18.3123 18.7052C18.7522 18.2652 18.9996 17.6686 19.0001 17.0464V4.84356C18.9996 4.22133 18.7522 3.62473 18.3123 3.18475C17.8723 2.74476 17.2757 2.49736 16.6534 2.49687ZM18.0615 17.0464C18.0615 17.4198 17.9131 17.778 17.6491 18.042C17.385 18.3061 17.0269 18.4544 16.6534 18.4544H2.57326C2.19983 18.4544 1.8417 18.3061 1.57764 18.042C1.31359 17.778 1.16524 17.4198 1.16524 17.0464V9.06762H18.0615V17.0464ZM18.0615 8.12894H1.16524V4.84356C1.16524 4.06634 1.79416 3.43554 2.57326 3.43554H5.3893V4.84356C5.3893 4.96804 5.43875 5.08742 5.52676 5.17544C5.61478 5.26345 5.73416 5.3129 5.85864 5.3129C5.98311 5.3129 6.10249 5.26345 6.19051 5.17544C6.27853 5.08742 6.32798 4.96804 6.32798 4.84356V3.43554H12.8987V4.84356C12.8987 4.96804 12.9482 5.08742 13.0362 5.17544C13.1242 5.26345 13.2436 5.3129 13.3681 5.3129C13.4925 5.3129 13.6119 5.26345 13.6999 5.17544C13.788 5.08742 13.8374 4.96804 13.8374 4.84356V3.43554H16.6534C17.0269 3.43554 17.385 3.58389 17.6491 3.84794C17.9131 4.112 18.0615 4.47013 18.0615 4.84356V8.12894Z" />
-                                        <defs>
-                                            <linearGradient id="linear-data" x1="0.241211" y1="17.8396" x2="15.1519"
-                                                y2="-0.632826" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#58ABF7" />
-                                                <stop offset="0.213542" stop-color="#4079DB" />
-                                                <stop offset="0.463542" stop-color="#826CDE" />
-                                                <stop offset="0.713542" stop-color="#BB77C2" />
-                                                <stop offset="1" stop-color="#FBDBAA" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                </button>
-                            </a>
-                            <img class="gallery-shutterstock max768" src="img/1x1.png" data-src="img/shutterstock2.svg"
-                                alt="">
+                                </ol>
+                                <a class="button-link" href="https://new.skyway.capital/auth/login">
+                                    <img src="img/grad-bgc.png" alt="">
+                                    <button class="_btn-gradient">
+                                        <span>Забронировать место</span>
+                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.6534 2.49687H13.8374V1.08885C13.8374 0.96437 13.788 0.844992 13.6999 0.756973C13.6119 0.668955 13.4925 0.619507 13.3681 0.619507C13.2436 0.619507 13.1242 0.668955 13.0362 0.756973C12.9482 0.844992 12.8987 0.96437 12.8987 1.08885V2.49687H6.32798V1.08885C6.32798 0.96437 6.27853 0.844992 6.19051 0.756973C6.10249 0.668955 5.98311 0.619507 5.85864 0.619507C5.73416 0.619507 5.61478 0.668955 5.52676 0.756973C5.43875 0.844992 5.3893 0.96437 5.3893 1.08885V2.49687H2.57326C1.95111 2.49761 1.35465 2.74509 0.914718 3.18502C0.474788 3.62495 0.227308 4.22141 0.226562 4.84356V17.0464C0.227308 17.6685 0.474788 18.265 0.914718 18.7049C1.35465 19.1449 1.95111 19.3923 2.57326 19.3931H16.6534C17.2757 19.3926 17.8723 19.1452 18.3123 18.7052C18.7522 18.2652 18.9996 17.6686 19.0001 17.0464V4.84356C18.9996 4.22133 18.7522 3.62473 18.3123 3.18475C17.8723 2.74476 17.2757 2.49736 16.6534 2.49687ZM18.0615 17.0464C18.0615 17.4198 17.9131 17.778 17.6491 18.042C17.385 18.3061 17.0269 18.4544 16.6534 18.4544H2.57326C2.19983 18.4544 1.8417 18.3061 1.57764 18.042C1.31359 17.778 1.16524 17.4198 1.16524 17.0464V9.06762H18.0615V17.0464ZM18.0615 8.12894H1.16524V4.84356C1.16524 4.06634 1.79416 3.43554 2.57326 3.43554H5.3893V4.84356C5.3893 4.96804 5.43875 5.08742 5.52676 5.17544C5.61478 5.26345 5.73416 5.3129 5.85864 5.3129C5.98311 5.3129 6.10249 5.26345 6.19051 5.17544C6.27853 5.08742 6.32798 4.96804 6.32798 4.84356V3.43554H12.8987V4.84356C12.8987 4.96804 12.9482 5.08742 13.0362 5.17544C13.1242 5.26345 13.2436 5.3129 13.3681 5.3129C13.4925 5.3129 13.6119 5.26345 13.6999 5.17544C13.788 5.08742 13.8374 4.96804 13.8374 4.84356V3.43554H16.6534C17.0269 3.43554 17.385 3.58389 17.6491 3.84794C17.9131 4.112 18.0615 4.47013 18.0615 4.84356V8.12894Z" />
+                                            <defs>
+                                                <linearGradient id="linear-data" x1="0.241211" y1="17.8396" x2="15.1519"
+                                                    y2="-0.632826" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#58ABF7" />
+                                                    <stop offset="0.213542" stop-color="#4079DB" />
+                                                    <stop offset="0.463542" stop-color="#826CDE" />
+                                                    <stop offset="0.713542" stop-color="#BB77C2" />
+                                                    <stop offset="1" stop-color="#FBDBAA" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="pricing__box-item">
+                                <h3>250$</h3>
+                                <label>Условие получения скидки:</label>
+                                <ol>
+                                    <li>С <span>1 августа</span> по <span>10 сентября</span> открыть рассрочку лично, не
+                                        менее чем на <span>100$</span> в месяц
+                                    </li>
+                                    <li>+привлечь <span>2 партнеров</span> в первую линию с рассрочкой не менее
+                                        <span>100
+                                            $</span> в месяц по текущему
+                                        дисконту и доплатить за участие.
+                                    </li>
+                                </ol>
+                                <a class="button-link" href="https://new.skyway.capital/auth/login">
+                                    <img src="img/grad-bgc.png" alt="">
+                                    <button class="_btn-gradient">
+                                        <span>Забронировать место</span>
+                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.6534 2.49687H13.8374V1.08885C13.8374 0.96437 13.788 0.844992 13.6999 0.756973C13.6119 0.668955 13.4925 0.619507 13.3681 0.619507C13.2436 0.619507 13.1242 0.668955 13.0362 0.756973C12.9482 0.844992 12.8987 0.96437 12.8987 1.08885V2.49687H6.32798V1.08885C6.32798 0.96437 6.27853 0.844992 6.19051 0.756973C6.10249 0.668955 5.98311 0.619507 5.85864 0.619507C5.73416 0.619507 5.61478 0.668955 5.52676 0.756973C5.43875 0.844992 5.3893 0.96437 5.3893 1.08885V2.49687H2.57326C1.95111 2.49761 1.35465 2.74509 0.914718 3.18502C0.474788 3.62495 0.227308 4.22141 0.226562 4.84356V17.0464C0.227308 17.6685 0.474788 18.265 0.914718 18.7049C1.35465 19.1449 1.95111 19.3923 2.57326 19.3931H16.6534C17.2757 19.3926 17.8723 19.1452 18.3123 18.7052C18.7522 18.2652 18.9996 17.6686 19.0001 17.0464V4.84356C18.9996 4.22133 18.7522 3.62473 18.3123 3.18475C17.8723 2.74476 17.2757 2.49736 16.6534 2.49687ZM18.0615 17.0464C18.0615 17.4198 17.9131 17.778 17.6491 18.042C17.385 18.3061 17.0269 18.4544 16.6534 18.4544H2.57326C2.19983 18.4544 1.8417 18.3061 1.57764 18.042C1.31359 17.778 1.16524 17.4198 1.16524 17.0464V9.06762H18.0615V17.0464ZM18.0615 8.12894H1.16524V4.84356C1.16524 4.06634 1.79416 3.43554 2.57326 3.43554H5.3893V4.84356C5.3893 4.96804 5.43875 5.08742 5.52676 5.17544C5.61478 5.26345 5.73416 5.3129 5.85864 5.3129C5.98311 5.3129 6.10249 5.26345 6.19051 5.17544C6.27853 5.08742 6.32798 4.96804 6.32798 4.84356V3.43554H12.8987V4.84356C12.8987 4.96804 12.9482 5.08742 13.0362 5.17544C13.1242 5.26345 13.2436 5.3129 13.3681 5.3129C13.4925 5.3129 13.6119 5.26345 13.6999 5.17544C13.788 5.08742 13.8374 4.96804 13.8374 4.84356V3.43554H16.6534C17.0269 3.43554 17.385 3.58389 17.6491 3.84794C17.9131 4.112 18.0615 4.47013 18.0615 4.84356V8.12894Z" />
+                                            <defs>
+                                                <linearGradient id="linear-data" x1="0.241211" y1="17.8396" x2="15.1519"
+                                                    y2="-0.632826" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#58ABF7" />
+                                                    <stop offset="0.213542" stop-color="#4079DB" />
+                                                    <stop offset="0.463542" stop-color="#826CDE" />
+                                                    <stop offset="0.713542" stop-color="#BB77C2" />
+                                                    <stop offset="1" stop-color="#FBDBAA" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <img class="gallery-shutterstock max768" src="img/1x1.png"
+                                    data-src="img/shutterstock2.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+                <img class="pricing__box-image" src="img/1x1.png" data-src="img/pedestal.png" alt="">
+            </section>
+            <section class="galery _nocenter" id="galereya" data-bar="7">
+                <img class="gallery-shutterstock min768" src="img/1x1.png" data-src="img/shutterstock.svg" alt="">
+                <div class="galery__container">
+                    <div class="galery__body">
+                        <div class="gallery">
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery1.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery2.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery3.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery4.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery5.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery6.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery7.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery8.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery9.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery10.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery11.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery12.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery13.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery14.webp" alt="">
+                            </div>
+                            <div class="gallery__image">
+                                <img src="img/gallery/gallery15.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__zoom">
+                    <div class="gallery__zoom-bar">
+                        <div class="gallery__zoom-bar-cont _container">
+                            <div class="gallery__zoom-count"></div>
+                            <div class="gallery__zoom-actions">
+                                <button class="close">
+                                    <img src="img/ligthbox/closel.svg" alt="">
+                                </button>
+                                <div class="fullscreen">
+                                    <button class="fullscreen-plus">
+                                        <img src="img/ligthbox/full.svg" alt="">
+                                    </button>
+                                    <button class="fullscreen-minus">
+                                        <img src="img/ligthbox/full-undo.svg" alt="">
+                                    </button>
+                                </div>
+                                <!-- <div class="zoom">
+                                        <button class="zoom-plus">
+                                            <img src="img/ligthbox/zoom.svg" alt="">
+                                        </button>
+                                        <button class="zoom-minus">
+                                            <img src="img/ligthbox/zoom-minus.svg" alt="">
+                                        </button>
+                                    </div> -->
+                            </div>
+                            <div class="ya-share2  data-curtain" data-shape="round" data-limit="0"
+                                data-more-button-type="short" data-services="vkontakte,telegram"></div>
+                        </div>
+                    </div>
+                    <div class="gallery__zoom-image"></div>
+                </div>
+            </section>
+        </div>
+        <div class="scroll-wrapper2">
+
+
+
+            <img src="img/shaiba.png" class="first-shaiba" alt="">
+            <img class="top-ball" src="img/1x1.png" data-src="img/ball1.svg" alt="">
+            <div class="first2 section2"></div>
+            <div class="steps2 section2">
+                <img class="steps-ball" src="img/ball2.svg" alt="">
+                <img class="steps-piramide" src="img/piramide.svg" alt="">
             </div>
-            <img class="pricing__box-image" src="img/1x1.png" data-src="img/pedestal.png" alt="">
-        </section>
-        <section class="galery" id="galereya">
-            <img class="gallery-shutterstock min768" src="img/1x1.png" data-src="img/shutterstock.svg" alt="">
-            <div class="galery__container">
-                <div class="galery__body">
-                    <div class="gallery" data-pswp-uid="1">
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery1.png" src="img/gallery/gallery1.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery1.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery2.png" src="img/gallery/gallery2.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery2.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery3.png" src="img/gallery/gallery3.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery3.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery4.png" src="img/gallery/gallery4.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery4.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery5.png" src="img/gallery/gallery5.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery5.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery6.png" src="img/gallery/gallery6.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery6.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery7.png" src="img/gallery/gallery7.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery7.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery8.png" src="img/gallery/gallery8.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery8.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery9.png" src="img/gallery/gallery9.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery9.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery10.png" src="img/gallery/gallery10.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery10.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery11.png" src="img/gallery/gallery11.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery11.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery12.png" src="img/gallery/gallery12.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery12.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery13.png" src="img/gallery/gallery13.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery13.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery14.png" src="img/gallery/gallery14.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery14.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-                        <figure class="gallery-item horizontal">
-                            <a href="img/gallery/gallery15.png" src="img/gallery/gallery15.png" data-size="2000x1000">
-                                <img class="lazypreload fadein lazyloaded" src="img/1x1.png"
-                                    data-src="img/gallery/gallery15.png" alt=""></a>
-                            <figcaption class="gallery-caption">Caption</figcaption>
-                        </figure>
-
-                    </div>
-                    <div class="pswp">
-                        <div class="pswp__bg"></div>
-                        <div class="pswp__scroll-wrap">
-                            <div class="pswp__container">
-                                <div class="pswp__item">
-                                    <div class="pswp__zoom-wrap"></div>
-                                </div>
-                                <div class="pswp__item">
-                                    <div class="pswp__zoom-wrap"></div>
-                                </div>
-                                <div class="pswp__item">
-                                    <div class="pswp__zoom-wrap"></div>
-                                </div>
-                            </div>
-                            <div class="pswp__ui pswp__ui--fit pswp__ui--hidden">
-                                <div class="pswp__top-bar">
-                                    <div class="pswp__counter"></div>
-                                    <button class="pswp__button pswp__button--close"></button>
-                                    <button class="pswp__button pswp__button--share"></button>
-                                    <button class="pswp__button pswp__button--fs"></button>
-                                    <button class="pswp__button pswp__button--zoom"></button>
-                                    <div class="pswp__preloader">
-                                        <div class="pswp__preloader__icn">
-                                            <div class="pswp__preloader__cut">
-                                                <div class="pswp__preloader__donut"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                    <div class="pswp__share-tooltip"></div>
-                                </div>
-                                <button class="pswp__button pswp__button--arrow--left"></button>
-                                <button class="pswp__button pswp__button--arrow--right"></button>
-                                <div class="pswp__caption">
-                                    <div class="pswp__caption__center"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="persons2 section2">
+                <img class="cube" src="img/1x1.png" data-src="img/cube.svg" alt="">
+                <img class="persons-shaiba" src="img/1x1.png" data-src="img/shaiba.png" alt="">
+                <img class="persons-piramide" src="img/1x1.png" data-src="img/piramide.svg" alt="">
             </div>
-        </section>
+            <div class="programm2 section2">
+                <img class="piramide min768" src="img/1x1.png" data-src="img/piramide.svg" alt="">
+            </div>
+            <div class="video2 section2"></div>
+            <div class="pricing2 section2">
+                <img class="pricing-shaiba" src="img/1x1.png" data-src="img/shaiba-top.png" alt="">
+            </div>
+            <div class="gallery2 section2"></div>
+        </div>
+        <div class="scroll-progress">
+            <span data-bar="1" class="first-bar"></span>
+            <span data-bar="2" class="steps-bar"></span>
+            <span data-bar="3" class="persons-bar"></span>
+            <span data-bar="4" class="programm-bar"></span>
+            <span data-bar="5" class="video-bar"></span>
+            <span data-bar="6" class="pricing-bar"></span>
+            <span data-bar="7" class="galery-bar"></span>
+            <div class="scroll-progress-line"></div>
+        </div>
     </main>
     <div class="preloader">
         <!-- <img class="preloader__left" src="img/preloader-left.png" alt=""> -->
@@ -1250,216 +1312,18 @@
         </video>
     </div>
 
+    <script src="https://yastatic.net/share2/share.js"></script>
     <script src="files/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.js"></script>
-    <script id="rendered-js">
-        (function () {
-            var initPhotoSwipeFromDOM;
-
-            initPhotoSwipeFromDOM = function (gallerySelector) {
-                var closest, galleryElements, hashData, i, l, onThumbnailsClick, openPhotoSwipe, parseThumbnailElements, photoswipeParseHash;
-                // parse slide data (url, title, size ...) from DOM elements 
-                // (children of gallerySelector)
-                parseThumbnailElements = function (el) {
-                    var figureEl, i, item, items, linkEl, numNodes, size, thumbElements;
-                    thumbElements = el.childNodes;
-                    numNodes = thumbElements.length;
-                    items = [];
-                    figureEl = void 0;
-                    linkEl = void 0;
-                    size = void 0;
-                    item = void 0;
-                    i = 0;
-                    while (i < numNodes) {
-                        figureEl = thumbElements[i];
-                        // <figure> element
-                        // include only element nodes 
-                        if (figureEl.nodeType !== 1) {
-                            i++;
-                            continue;
-                        }
-                        linkEl = figureEl.children[0];
-                        // <a> element
-                        size = linkEl.getAttribute('data-size').split('x');
-                        // create slide object
-                        item = {
-                            src: linkEl.getAttribute('href'),
-                            w: parseInt(size[0], 10),
-                            h: parseInt(size[1], 10)
-                        };
-                        if (figureEl.children.length > 1) {
-                            // <figcaption> content
-                            item.title = figureEl.children[1].innerHTML;
-                        }
-                        if (linkEl.children.length > 0) {
-                            // <img> thumbnail element, retrieving thumbnail url
-                            item.msrc = linkEl.children[0].getAttribute('src');
-                        }
-                        item.el = figureEl;
-                        // save link to element for getThumbBoundsFn
-                        items.push(item);
-                        i++;
-                    }
-                    return items;
-                };
-                // find nearest parent element
-                closest = function (el, fn) {
-                    return el && (fn(el) ? el : closest(el.parentNode, fn));
-                };
-                // triggers when user clicks on thumbnail
-                onThumbnailsClick = function (e) {
-                    var childNodes, clickedGallery, clickedListItem, eTarget, i, index, nodeIndex, numChildNodes;
-                    e = e || window.event;
-                    if (e.preventDefault) {
-                        e.preventDefault();
-                    } else {
-                        (e.returnValue = false);
-                    }
-                    eTarget = e.target || e.srcElement;
-                    // find root element of slide
-                    clickedListItem = closest(eTarget, function (el) {
-                        return el.tagName && el.tagName.toUpperCase() === 'FIGURE';
-                    });
-                    if (!clickedListItem) {
-                        return;
-                    }
-                    // find index of clicked item by looping through all child nodes
-                    // alternatively, you may define index via data- attribute
-                    clickedGallery = clickedListItem.parentNode;
-                    childNodes = clickedListItem.parentNode.childNodes;
-                    numChildNodes = childNodes.length;
-                    nodeIndex = 0;
-                    index = void 0;
-                    i = 0;
-                    while (i < numChildNodes) {
-                        if (childNodes[i].nodeType !== 1) {
-                            i++;
-                            continue;
-                        }
-                        if (childNodes[i] === clickedListItem) {
-                            index = nodeIndex;
-                            break;
-                        }
-                        nodeIndex++;
-                        i++;
-                    }
-                    if (index >= 0) {
-                        // open PhotoSwipe if valid index found
-                        openPhotoSwipe(index, clickedGallery);
-                    }
-                    return false;
-                };
-                // parse picture index and gallery index from URL (#&pid=1&gid=2)
-                photoswipeParseHash = function () {
-                    var hash, i, pair, params, vars;
-                    hash = window.location.hash.substring(1);
-                    params = {};
-                    if (hash.length < 5) {
-                        return params;
-                    }
-                    vars = hash.split('&');
-                    i = 0;
-                    while (i < vars.length) {
-                        if (!vars[i]) {
-                            i++;
-                            continue;
-                        }
-                        pair = vars[i].split('=');
-                        if (pair.length < 2) {
-                            i++;
-                            continue;
-                        }
-                        params[pair[0]] = pair[1];
-                        i++;
-                    }
-                    if (params.gid) {
-                        params.gid = parseInt(params.gid, 10);
-                    }
-                    return params;
-                };
-                openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
-                    var gallery, items, j, options, pswpElement;
-                    pswpElement = document.querySelectorAll('.pswp')[0];
-                    gallery = void 0;
-                    options = void 0;
-                    items = void 0;
-                    items = parseThumbnailElements(galleryElement);
-                    // define options (if needed)
-                    options = {
-                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
-                        getThumbBoundsFn: function (index) {
-                            var pageYScroll, rect, thumbnail;
-                            // See Options -> getThumbBoundsFn section of documentation for more info
-                            thumbnail = items[index].el.getElementsByTagName('img')[0];
-                            pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
-                            rect = thumbnail.getBoundingClientRect();
-                            return {
-                                x: rect.left,
-                                y: rect.top + pageYScroll,
-                                w: rect.width
-                            };
-                        }
-                    };
-                    // PhotoSwipe opened from URL
-                    if (fromURL) {
-                        if (options.galleryPIDs) {
-                            // parse real index when custom PIDs are used 
-                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
-                            j = 0;
-                            while (j < items.length) {
-                                if (items[j].pid === index) {
-                                    options.index = j;
-                                    break;
-                                }
-                                j++;
-                            }
-                        } else {
-                            // in URL indexes start from 1
-                            options.index = parseInt(index, 10) - 1;
-                        }
-                    } else {
-                        options.index = parseInt(index, 10);
-                    }
-                    // exit if index not found
-                    if (isNaN(options.index)) {
-                        return;
-                    }
-                    if (disableAnimation) {
-                        options.showAnimationDuration = 0;
-                    }
-                    // Pass data to PhotoSwipe and initialize it
-                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-                    gallery.init();
-                };
-                // loop through all gallery elements and bind events
-                galleryElements = document.querySelectorAll(gallerySelector);
-                i = 0;
-                l = galleryElements.length;
-                while (i < l) {
-                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
-                    galleryElements[i].onclick = onThumbnailsClick;
-                    i++;
-                }
-                // Parse URL and open gallery if it contains #&pid=3&gid=1
-                hashData = photoswipeParseHash();
-                if (hashData.pid && hashData.gid) {
-                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
-                }
-            };
-
-            // execute above function
-            initPhotoSwipeFromDOM('.gallery');
-
-            // ---
-            // generated by js2coffee 2.2.0
-
-        }).call(this);
-
-    </script>
     <script src="files/swiper.min.js"></script>
     <script src="files/lazy.js"></script>
     <script src="js/app.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="files/smoothscroll.js"></script>
+
 </body>
 
 </html>

@@ -1,3 +1,210 @@
-git remote add origin https://github.com/MyCode07/issik-kul.git
-git branch -M main
-git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <section class="galery _nocenter" id="galereya">
+        <img class="gallery-shutterstock min768" src="img/1x1.png" data-src="img/shutterstock.svg" alt="">
+        <div class="galery__container">
+            <div class="galery__body">
+                <div class="gallery">
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery1.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery2.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery3.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery4.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery5.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery6.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery7.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery8.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery9.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery10.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery11.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery12.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery13.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery14.webp" alt="">
+                    </div>
+                    <div class="gallery__image">
+                        <img src="img/gallery/gallery15.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__zoom">
+            <div class="gallery__zoom-bar">
+                <div class="gallery__zoom-bar-cont _container">
+                    <div class="gallery__zoom-count"></div>
+                    <div class="gallery__zoom-actions">
+                        <button class="close">
+                            <img src="img/ligthbox/closel.svg" alt="">
+                        </button>
+                        <div class="fullscreen">
+                            <button class="fullscreen-plus">
+                                <img src="img/ligthbox/full.svg" alt="">
+                            </button>
+                            <button class="fullscreen-minus">
+                                <img src="img/ligthbox/full-undo.svg" alt="">
+                            </button>
+                        </div>
+                        <!-- <div class="zoom">
+                            <button class="zoom-plus">
+                                <img src="img/ligthbox/zoom.svg" alt="">
+                            </button>
+                            <button class="zoom-minus">
+                                <img src="img/ligthbox/zoom-minus.svg" alt="">
+                            </button>
+                        </div> -->
+                    </div>
+                    <div class="ya-share2  data-curtain" data-shape="round" data-limit="0" data-more-button-type="short"
+                        data-services="vkontakte,telegram"></div>
+                </div>
+            </div>
+            <div class="gallery__zoom-image"></div>
+        </div>
+    </section>
+
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <div></div>
+
+    <script>
+        if (document.querySelector('.gallery')) {
+            let zoomBox = document.querySelector('.gallery__zoom');
+            let zoomImage = document.querySelector('.gallery__zoom-image');
+            document.addEventListener('click', function (e) {
+                let targetEl = e.target;
+
+                if (targetEl.classList.contains('gallery__image')) {
+                    let img = targetEl.querySelector('img').cloneNode();
+
+                    zoomBox.classList.add('_active')
+                    zoomImage.style.backgroundImage = `url(${img.src})`;
+                    console.log(img);
+                    zoomBox.style.top = '0px';
+                    zoomBox.style.left = '0px';
+                    zoomBox.style.width = '100%';
+                    zoomBox.style.height = '100%';
+                }
+
+                zoomImage.addEventListener('wheel', (e) => {
+                    if (e.deltaY == 100 || e.deltaY == -100) {
+                        close();
+                    }
+                })
+
+                function close() {
+                    zoomBox.classList.remove('_active')
+                    zoomBox.style.top = zoomBox.dataset.top + 'px';
+                    zoomBox.style.left = zoomBox.dataset.left + 'px';
+                    zoomBox.style.width = zoomBox.dataset.width + 'px';
+                    zoomBox.style.height = zoomBox.dataset.height + 'px';
+                }
+
+                if (targetEl.classList.contains('fullscreen-plus')) {
+                    addFullScreen(document.documentElement);
+                    document.querySelector('.fullscreen').classList.add('_fullscreen');
+                }
+                if (targetEl.classList.contains('fullscreen-minus')) {
+                    removeFullScreen();
+                    document.querySelector('.fullscreen').classList.remove('_fullscreen');
+                }
+
+                if (targetEl.classList.contains('close')) {
+                    close();
+                }
+
+                // if (targetEl.classList.contains('zoom-plus')) {
+
+                //     zoomImage.style.backgroundSize = '200%';
+                // }
+                // if (targetEl.classList.contains('zoom-minus')) {
+                //     zoomImage.style.backgroundSize = 'auto';
+                // }
+
+            })
+            const images = document.querySelectorAll('.gallery__image');
+            for (let i = 0; i < images.length; i++) {
+                const image = images[i];
+                let img = image.querySelector('img').cloneNode();
+                image.addEventListener('mouseenter', function (e) {
+                    let coords = image.getBoundingClientRect();
+                    zoomBox.style.top = coords.top + 'px';
+                    zoomBox.style.left = coords.left + 'px';
+                    zoomBox.style.width = coords.width + 'px';
+                    zoomBox.style.height = coords.height + 'px';
+
+                    zoomBox.setAttribute('data-top', coords.top);
+                    zoomBox.setAttribute('data-left', coords.left);
+                    zoomBox.setAttribute('data-width', coords.width);
+                    zoomBox.setAttribute('data-height', coords.height);
+                })
+            }
+
+            function addFullScreen(el) {
+                // for newer Webkit and Firefox
+                let rfs =
+                    el.requestFullScreen
+                    || el.webkitRequestFullScreen
+                    || el.mozRequestFullScreen
+                    || el.msRequestFullScreen
+                    ;
+                if (typeof rfs != "undefined" && rfs) {
+                    rfs.call(el);
+                }
+                else if (typeof window.ActiveXObject != "undefined") {
+                    // for Internet Explorer
+                    let wscript = new ActiveXObject("WScript.Shell");
+                    if (wscript != null) {
+                        wscript.SendKeys("{F11}");
+                    }
+                }
+            }
+
+            function removeFullScreen() {
+                if (document.cancelFullScreen) {
+                    document.cancelFullScreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitCancelFullScreen) {
+                    document.webkitCancelFullScreen();
+                }
+            }
+        }
+    </script>
+
+</html>

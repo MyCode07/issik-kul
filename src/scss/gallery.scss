@@ -1,0 +1,234 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.gallery__image {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery__image img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.gallery__image:before,
+.gallery__image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s;
+    will-change: border;
+    z-index: 10;
+}
+
+.gallery__image:before {
+    border: 0.5rem solid rgba(255, 255, 255, 0.3);
+}
+
+.gallery__image:after {
+    border-width: 2px;
+    margin: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    -webkit-clip-path: polygon(
+        0 calc(100% - 1rem),
+        0 100%,
+        1rem 100%,
+        1rem 0,
+        0 0,
+        0 1rem,
+        100% 1rem,
+        100% 0,
+        calc(100% - 1rem) 0,
+        calc(100% - 1rem) 100%,
+        100% 100%,
+        100% calc(100% - 1rem)
+    );
+    clip-path: polygon(
+        0 calc(100% - 1rem),
+        0 100%,
+        1rem 100%,
+        1rem 0,
+        0 0,
+        0 1rem,
+        100% 1rem,
+        100% 0,
+        calc(100% - 1rem) 0,
+        calc(100% - 1rem) 100%,
+        100% 100%,
+        100% calc(100% - 1rem)
+    );
+}
+
+.gallery__image:hover:after {
+    transform: scale(0.9);
+    border-color: white;
+}
+
+.gallery__zoom {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    z-index: 101;
+    pointer-events: none;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.gallery__zoom._active {
+    pointer-events: all;
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+    .gallery__zoom-bar {
+        visibility: visible;
+    }
+}
+
+.gallery__zoom-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 102;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+.gallery__zoom-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff;
+
+    @media (max-width: 1024px) {
+        height: 100%;
+    }
+}
+
+.gallery__zoom-image img {
+    transition: all 0.3s ease 0s;
+}
+
+.gallery__zoom {
+    // .gallery__zoom-bar
+
+    &-bar {
+        &-cont {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    }
+
+    // .gallery__zoom-count
+
+    &-count {
+    }
+
+    // .gallery__zoom-actions
+
+    &-actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        button {
+            width: 30px;
+            height: 30px;
+            flex: 0 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                pointer-events: none;
+                width: 100%;
+            }
+            margin-right: 20px;
+
+            &.zoom-minus,
+            &.fullscreen-minus {
+                display: none;
+            }
+        }
+    }
+}
+
+.ya-share2__icon.ya-share2__icon_more{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.fullscreen {
+    &._fullscreen {
+        .fullscreen-plus {
+            display: none;
+        }
+
+        .fullscreen-minus {
+            display: flex;
+        }
+    }
+
+    // .fullscreen-plus
+
+    &-plus {
+    }
+
+    // .fullscreen-minus
+
+    &-minus {
+    }
+}
+.zoom {
+    &._zoom {
+        .zoom-plus {
+            display: none;
+        }
+
+        .zoom-minus {
+            display: flex;
+        }
+    }
+
+    // .zoom-plus
+
+    &-plus {
+    }
+
+    // .zoom-minus
+
+    &-minus {
+    }
+}
+.ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more {
+    background-image: url("../img/share2.svg") !important;
+}
+
+.ya-share2__container_size_m
+    .ya-share2__item_more.ya-share2__item_has-pretty-view
+    .ya-share2__link_more.ya-share2__link_more-button-type_short {
+    padding: 0 !important;
+}
+
+.ya-share2__container_size_m .ya-share2__item_copy .ya-share2__icon_copy,
+.ya-share2__container_size_m .ya-share2__item_more .ya-share2__icon_more {
+    background-size: cover !important;
+}
