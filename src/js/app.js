@@ -202,6 +202,7 @@ if (videBox) {
     videBox.addEventListener('click', () => {
         document.querySelector('.popup__video').classList.add('_active');
         let video = document.querySelector('.popup__video video')
+        video.preload = 'metadata';
         video.play();
     })
 }
@@ -357,9 +358,6 @@ if (window.innerWidth > 1024) {
 
         parallax: true,
 
-
-
-
         keyboard: {
             // Включить\выключить
             enabled: true,
@@ -414,35 +412,30 @@ if (window.innerWidth > 1024) {
             let bottom = scrollHeight - windowHeight + 216;
 
             if (scr2 >= 0 && scr2 < bottom) {
-                gallery.style.transform = `translate3d(0,${-scr2}px,0)`
-                zoomImage.style.transform = `translate3d(0,${scr2}px,0)`
-                zoomIBar.style.transform = `translate3d(0,${scr2}px,0)`
-                gallery.classList.add('_scroll')
+                gallery.style.transform = `translate3d(0,${-scr2}px,0)`;
+                zoomImage.style.transform = `translate3d(0,${scr2}px,0)`;
+                zoomIBar.style.transform = `translate3d(0,${scr2}px,0)`;
+                gallery.classList.add('_scroll');
 
 
+                swiper.mousewheel.disable();
             }
             else if (scr2 >= bottom) {
-                gallery.style.transform = `translate3d(0,${-bottom}px,0)`
-                zoomImage.style.transform = `translate3d(0,${bottom}px,0)`
-                zoomIBar.style.transform = `translate3d(0,${bottom}px,0)`
+                gallery.style.transform = `translate3d(0,${-bottom}px,0)`;
+                zoomImage.style.transform = `translate3d(0,${bottom}px,0)`;
+                zoomIBar.style.transform = `translate3d(0,${bottom}px,0)`;
                 scr2 = bottom;
-                gallery.classList.add('_scroll')
-
-
-
+                gallery.classList.add('_scroll');
             }
 
             else {
-                gallery.style.transform = `translate3d(0px,0,0)`
-                zoomImage.style.transform = `translate3d(0px,0,0)`
-                zoomIBar.style.transform = `translate3d(0px,0,0)`
+                gallery.style.transform = `translate3d(0px,0,0)`;
+                zoomImage.style.transform = `translate3d(0px,0,0)`;
+                zoomIBar.style.transform = `translate3d(0px,0,0)`;
                 scr2 = 0;
-                gallery.classList.remove('_scroll')
-
-
-
+                gallery.classList.remove('_scroll');
+                swiper.mousewheel.enable();
             }
-            console.log(swiper.params.mousewheel);
         }
     })
 

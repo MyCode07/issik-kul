@@ -122,4 +122,38 @@
     .pricing__box-item label {
         @include adaptive-value("margin-bottom", 15, 10, 1);
     }
+
+    .person__info label {
+        margin-bottom: 15px;
+    }
+
+    .person__info ol > :not(:last-child) {
+        margin-bottom: 0.6em;
+    }
+
+    .person__image {
+        flex-basis: 140px;
+        height: 140px;
+    }
+}
+
+@media (min-width: 1025px) and (max-height: 715px) {
+    .pricing__box-item {
+        @media (any-hover: hover) {
+            &:hover {
+                transform: translate(0, 0) !important;
+            }
+        }
+    }
+
+    .pricing h2 {
+        margin-bottom: 19px !important;
+    }
+    .pricing__box-item ol {
+        margin-bottom: 15px !important;
+    }
+
+    .persons__grid-body {
+        padding-top: 30px !important;
+    }
 }

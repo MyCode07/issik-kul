@@ -11,7 +11,8 @@
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="icon" type="image/png" href="img/favicon.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20220811223311" />
 
     <script>
         window.console = window.console || function (t) { };
@@ -22,35 +23,39 @@
         }
     </script>
 
-    <link rel="stylesheet" href="files/swiper.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="files/swiper.min.css?_v=20220811223311">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220811223311">
+
+    <!-- Yandex.Metrika counter -->
+
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(89930368, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/89930368" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+
+    <!-- /Yandex.Metrika counter -->
+
 </head>
-
-<!-- Yandex.Metrika counter -->
-
-<script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-        m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-    })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(89930368, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true
-    });
-</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/89930368" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
-
-<!-- /Yandex.Metrika counter -->
 
 <body class="_noscroll">
     <header class="header">
-        <img class="top-gradinet" src="img/1x1.png" data-src="img/top-gradient.png" alt="">
+        <picture>
+            <source data-srcset="img/top-gradient.webp" type="image/webp"><img class="top-gradinet" src="img/1x1.png"
+                data-src="img/top-gradient.png" alt="">
+        </picture>
         <div class="header__container _container">
             <div class="header__body">
                 <button class="header__burger">
@@ -202,7 +207,10 @@
         </div>
     </header>
 
-    <img src="img/shaiba.png" class="first-shaiba iconmax1024" alt="">
+    <picture>
+        <source srcset="img/shaiba.webp" type="image/webp"><img src="img/shaiba.png" class="first-shaiba iconmax1024"
+            alt="">
+    </picture>
     <img class="top-ball iconmax1024" src="img/1x1.png" data-src="img/ball1.svg" alt="">
 
     <img class="left-elipse min1200 iconmax1024" src="img/1x1.png" data-src="img/elipse1.svg" alt="">
@@ -502,19 +510,37 @@
             </div>
         </div>
     </div>
-    <img class="right-gradient min768" src="img/1x1.png" data-src="img/right-gradient.png" alt="">
-    <img class="right-gradient max768" src="img/1x1.png" data-src="img/right-gradient2.png" alt="">
-    <img class="left-gradient min768" src="img/1x1.png" data-src="img/left-gradient.png" alt="">
-    <img class="left-gradient max768" src="img/1x1.png" data-src="img/left-gradient2.png" alt="">
+    <picture>
+        <source data-srcset="img/right-gradient.webp" type="image/webp"><img class="right-gradient min768"
+            src="img/1x1.png" data-src="img/right-gradient.png" alt="">
+    </picture>
+    <picture>
+        <source data-srcset="img/right-gradient2.webp" type="image/webp"><img class="right-gradient max768"
+            src="img/1x1.png" data-src="img/right-gradient2.png" alt="">
+    </picture>
+    <picture>
+        <source data-srcset="img/left-gradient.webp" type="image/webp"><img class="left-gradient min768"
+            src="img/1x1.png" data-src="img/left-gradient.png" alt="">
+    </picture>
+    <picture>
+        <source data-srcset="img/left-gradient2.webp" type="image/webp"><img class="left-gradient max768"
+            src="img/1x1.png" data-src="img/left-gradient2.png" alt="">
+    </picture>
     <main class="page">
         <div class="scroll-wrapper">
             <section class="first slidermin1025">
-                <img src="img/first-left-border.png" class="first-left-border" alt="">
+                <picture>
+                    <source srcset="img/first-left-border.webp" type="image/webp"><img src="img/first-left-border.png"
+                        class="first-left-border" alt="">
+                </picture>
                 <img src="img/shaiba.png" class="first-shaiba max1024" alt="" data-swiper-parallax-x="-200%"
                     data-swiper-parallax-duration="">
                 <img class="top-ball max1024" src="img/1x1.png" data-src="img/ball1.svg" alt=""
                     data-swiper-parallax-x="-200%" data-swiper-parallax-duration="">
-                <img src="img/first-bottom.png" class="first-bottom" alt="">
+                <picture>
+                    <source srcset="img/first-bottom.webp" type="image/webp"><img src="img/first-bottom.png"
+                        class="first-bottom" alt="">
+                </picture>
                 <div class="first__container _container">
                     <div class="first__body">
                         <div class="first__content">
@@ -535,7 +561,10 @@
                         </div>
                         <div class="first__image">
                             <div class="first__image-body">
-                                <img class="first__image-main" src="img/first-bgc.png" alt="">
+                                <picture>
+                                    <source srcset="img/first-bgc.webp" type="image/webp"><img class="first__image-main"
+                                        src="img/first-bgc.png" alt="">
+                                </picture>
                                 <div class="first__image-img">
                                     <img class="animate__animated animate__pulse animate__infinite	infinite"
                                         src="img/1x1.png" data-src="img/first-svg.svg" alt="">
@@ -566,7 +595,10 @@
                             <div class="steps__box-steps">
                                 <div class="item-step _hover">
                                     <div class="item-step__image">
-                                        <img src="img/ring.png" alt="">
+                                        <picture>
+                                            <source data-srcset="img/ring.webp" type="image/webp"><img
+                                                src="img/ring.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="item-step__content">
                                         <label><span>Приглашенные</span> спикеры <img src="img/star.svg" alt=""></label>
@@ -574,7 +606,10 @@
                                 </div>
                                 <div class="item-step _hover">
                                     <div class="item-step__image">
-                                        <img src="img/starr.png" alt="">
+                                        <picture>
+                                            <source data-srcset="img/starr.webp" type="image/webp"><img
+                                                src="img/starr.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="item-step__content">
                                         <label>Более <span>300</span> партнеров в одном месте <img src="img/star.svg"
@@ -583,7 +618,10 @@
                                 </div>
                                 <div class="item-step _hover">
                                     <div class="item-step__image">
-                                        <img src="img/comm.png" alt="">
+                                        <picture>
+                                            <source data-srcset="img/comm.webp" type="image/webp"><img
+                                                src="img/comm.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="item-step__content">
                                         <label><span>Масштабный</span> нетворкинг и обмен опытом <img src="img/star.svg"
@@ -592,7 +630,10 @@
                                 </div>
                                 <div class="item-step _hover">
                                     <div class="item-step__image">
-                                        <img src="img/cep.png" alt="">
+                                        <picture>
+                                            <source data-srcset="img/cep.webp" type="image/webp"><img src="img/cep.png"
+                                                alt="">
+                                        </picture>
                                     </div>
                                     <div class="item-step__content">
                                         <label><span>Традиции</span> и единение <img src="img/star.svg" alt=""></label>
@@ -603,8 +644,8 @@
                                         <img src="img/imgic.svg" alt="">
                                     </div>
                                     <div class="item-step__content">
-                                        <label><span>Крутая</span> локация и место силы <img src="img/1x1.png"
-                                                data-src="img/star.svg" alt=""></label>
+                                        <label><span>Крутая</span> локация и место силы <img src="img/star.svg"
+                                                alt=""></label>
                                     </div>
                                 </div>
                             </div>
@@ -613,9 +654,19 @@
                 </div>
             </section>
             <section class="persons min1024 margin-right slidermin1025" id="spikers" data-bar="2">
-                <img src="img/persons-kupol-bottom.png" class="kupol-pbottom" alt="">
-                <img class="persons-left-gradinet" src="img/1x1.png" data-src="img/persons-left-gradinet.png" alt="">
-                <img class="persons-right-gradinet" src="img/1x1.png" data-src="img/persons-right-gradinet.png" alt="">
+                <picture>
+                    <source srcset="img/persons-kupol-bottom.webp" type="image/webp"><img
+                        src="img/persons-kupol-bottom.png" class="kupol-pbottom" alt="">
+                </picture>
+                <picture>
+                    <source data-srcset="img/persons-left-gradinet.webp" type="image/webp"><img
+                        class="persons-left-gradinet" src="img/1x1.png" data-src="img/persons-left-gradinet.png" alt="">
+                </picture>
+                <picture>
+                    <source data-srcset="img/persons-right-gradinet.webp" type="image/webp"><img
+                        class="persons-right-gradinet" src="img/1x1.png" data-src="img/persons-right-gradinet.png"
+                        alt="">
+                </picture>
                 <img class="cube max1024" src="img/1x1.png" data-src="img/cube.svg" alt=""
                     data-swiper-parallax-x="-200%" data-swiper-parallax-duration="">
                 <div class="persons__container _container">
@@ -645,7 +696,10 @@
                             <div class="persons__grid-body">
                                 <div class="person swiper-slide scroll-start">
                                     <div class="person__image">
-                                        <img src="img/alexei-suhodoev.png" alt="">
+                                        <picture>
+                                            <source srcset="img/alexei-suhodoev.webp" type="image/webp"><img
+                                                src="img/alexei-suhodoev.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Алексей Суходоев</span><img src="img/persons-svg.svg"
@@ -670,7 +724,10 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/irina-volkova.png" alt="">
+                                        <picture>
+                                            <source srcset="img/irina-volkova.webp" type="image/webp"><img
+                                                src="img/irina-volkova.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Ирина Волкова</span><img src="img/persons-svg.svg" alt=""></label>
@@ -688,7 +745,10 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/frantisek-solar.png" alt="">
+                                        <picture>
+                                            <source srcset="img/frantisek-solar.webp" type="image/webp"><img
+                                                src="img/frantisek-solar.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Frantisek Solar</span><img src="img/persons-svg.svg"
@@ -697,7 +757,7 @@
                                             <li>Представитель правления SWC
                                             </li>
                                             <li>Руководитель международного отделения работы с партнерами
-                                                и Top - экспертами
+                                                и топ экспертами
                                             </li>
                                             <li class="min560">Долгосрочный успешный инвестор и структурный строитель в
                                                 сетевом маркетинге</li>
@@ -727,13 +787,16 @@
 
                                 <div class="person swiper-slide check-speekers">
                                     <div class="person__image">
-                                        <img src="img/patrila-ismailova.png" alt="">
+                                        <picture>
+                                            <source srcset="img/patrila-ismailova.webp" type="image/webp"><img
+                                                src="img/patrila-ismailova.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Патила Исмаилова</span><img src="img/persons-svg.svg"
                                                 alt=""></label>
                                         <ol>
-                                            <li>TOP - эксперт SWC</li>
+                                            <li>TOP эксперт SWC</li>
                                             <li>Куратор Кыргызстана</li>
                                             <li>С 2014 года в технологии SWC</li>
                                         </ol>
@@ -741,7 +804,10 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/igor-nosov.png" alt="">
+                                        <picture>
+                                            <source srcset="img/igor-nosov.webp" type="image/webp"><img
+                                                src="img/igor-nosov.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Игорь Носов</span><img src="img/persons-svg.svg" alt=""></label>
@@ -760,37 +826,45 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/asel-sidikova.png" alt="">
+                                        <picture>
+                                            <source srcset="img/asel-sidikova.webp" type="image/webp"><img
+                                                src="img/asel-sidikova.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Асель Сыдыкова</span><img src="img/persons-svg.svg" alt=""></label>
                                         <ol>
 
-                                            <li>Основательница Компании GBF</li>
+                                            <li>Основательница Компании "GBF"</li>
                                             <li> Обучает известных политиков в Европе и влиятельнейших бизнесменов
                                                 Казахстана</li>
-                                            <li class="min560">Была признана лучшей женщиной - спикером в Европе в 2014
+                                            <li class="min560">Была признана лучшей женщиной спикером в Европе в 2014
                                                 году</li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="person swiper-slide ">
                                     <div class="person__image">
-                                        <img src="img/alexandra-dassler.png" alt="">
+                                        <picture>
+                                            <source srcset="img/alexandra-dassler.webp" type="image/webp"><img
+                                                src="img/alexandra-dassler.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Александра Дасслер</span><img src="img/persons-svg.svg"
                                                 alt=""></label>
                                         <ol>
-                                            <li>Наставник курса “Высокие чеки в продажах” <br> более 10 лет</li>
-                                            <li class="min560">Инвестор и криптоюрист более 10 лет</li>
-                                            <li class="max560">Инвестор и криптоюрист</li>
+                                            <li>Наставник “Высокие чеки в продажах” более 10 лет</li>
+                                            <li class="min560">Инвестор и крипто юрист более 10 лет</li>
+                                            <li class="max560">Инвестор и крипто юрист</li>
 
-                                            <li class="min560">Сосоздатель инвест - игры Myinvestgame. За 6 месяцев
+                                            <li class="min560">Со-создатель инвест игры «Myinvestgame» за 6 месяцев
                                                 открыты представительства игропрактиков в 7
                                                 странах
                                             </li>
-                                            <li class="max560"> Сосоздатель инвест - игры Myinvestgame</li>
+
+                                            <li class="max560"> Со-создатель инвест т-игры «Myinvestgame»</li>
+
                                         </ol>
                                     </div>
                                 </div>
@@ -802,8 +876,14 @@
                 </div>
             </div>
             <div class="persons slidermin1025">
-                <img src="img/persons-kupol-top.png" class="kupol-ptop" alt="">
-                <img src="img/persons-kupol-bottom.png" class="kupol-bottom" alt="">
+                <picture>
+                    <source srcset="img/persons-kupol-top.webp" type="image/webp"><img src="img/persons-kupol-top.png"
+                        class="kupol-ptop" alt="">
+                </picture>
+                <picture>
+                    <source srcset="img/persons-kupol-bottom.webp" type="image/webp"><img
+                        src="img/persons-kupol-bottom.png" class="kupol-bottom" alt="">
+                </picture>
                 <img class="persons-piramide max1024" src="img/1x1.png" data-src="img/piramide.svg" alt=""
                     data-swiper-parallax-x="-200%" data-swiper-parallax-duration="">
                 <div class="persons__container _container">
@@ -819,20 +899,26 @@
 
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/elena-libkind.png" alt="">
+                                        <picture>
+                                            <source srcset="img/elena-libkind.webp" type="image/webp"><img
+                                                src="img/elena-libkind.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Елена Либкинд</span><img src="img/persons-svg.svg" alt=""></label>
                                         <ol>
                                             <li>Community architect SWC</li>
-                                            <li>Event - креатор</li>
+                                            <li>Event-креатор</li>
                                             <li>Кандидат экономических наук</li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/elizaveta-piatibratova.png" alt="">
+                                        <picture>
+                                            <source srcset="img/elizaveta-piatibratova.webp" type="image/webp"><img
+                                                src="img/elizaveta-piatibratova.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Елизавета Пятибратова</span><img src="img/persons-svg.svg"
@@ -851,14 +937,17 @@
 
                                 <div class="person swiper-slide scroll-end">
                                     <div class="person__image">
-                                        <img src="img/elena-pichujkina.png" alt="">
+                                        <picture>
+                                            <source srcset="img/elena-pichujkina.webp" type="image/webp"><img
+                                                src="img/elena-pichujkina.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Елена Пичужкина</span><img src="img/persons-svg.svg"
                                                 alt=""></label>
                                         <ol>
                                             <li>Community Lead SWC</li>
-                                            <li>Эксперт в сфере комьюнити - менеджмента</li>
+                                            <li>Эксперт в сфере комьюнити-менеджмента</li>
                                             <li class="min560">Организатор федеральных и региональных бизнес-мероприятий
                                             </li>
                                             <li class="max560">Организатор федеральных бизнес-мероприятий</li>
@@ -868,7 +957,10 @@
                                 </div>
                                 <div class="person swiper-slide ">
                                     <div class="person__image">
-                                        <img src="img/yana.png" alt="">
+                                        <picture>
+                                            <source srcset="img/yana.webp" type="image/webp"><img src="img/yana.png"
+                                                alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Яна Горячкова</span><img src="img/persons-svg.svg" alt=""></label>
@@ -885,12 +977,28 @@
                 </div>
             </div>
             <section class="persons slidermax1024 max1024 fixed-element" id="spikers">
-                <img src="img/persons-kupol-top.png" class="kupol-ptop" alt="">
-                <img src="img/persons-kupol-bottom.png" class="kupol-pbottom" alt="">
-                <img class="persons-left-gradinet" src="img/1x1.png" data-src="img/persons-left-gradinet.png" alt="">
-                <img class="persons-right-gradinet" src="img/1x1.png" data-src="img/persons-right-gradinet.png" alt="">
+                <picture>
+                    <source srcset="img/persons-kupol-top.webp" type="image/webp"><img src="img/persons-kupol-top.png"
+                        class="kupol-ptop" alt="">
+                </picture>
+                <picture>
+                    <source srcset="img/persons-kupol-bottom.webp" type="image/webp"><img
+                        src="img/persons-kupol-bottom.png" class="kupol-pbottom" alt="">
+                </picture>
+                <picture>
+                    <source data-srcset="img/persons-left-gradinet.webp" type="image/webp"><img
+                        class="persons-left-gradinet" src="img/1x1.png" data-src="img/persons-left-gradinet.png" alt="">
+                </picture>
+                <picture>
+                    <source data-srcset="img/persons-right-gradinet.webp" type="image/webp"><img
+                        class="persons-right-gradinet" src="img/1x1.png" data-src="img/persons-right-gradinet.png"
+                        alt="">
+                </picture>
                 <img class="cube max1024" src="img/1x1.png" data-src="img/cube.svg" alt="">
-                <img class="persons-shaiba max1024 " src="img/1x1.png" data-src="img/shaiba.png" alt="">
+                <picture>
+                    <source data-srcset="img/shaiba.webp" type="image/webp"><img class="persons-shaiba max1024 "
+                        src="img/1x1.png" data-src="img/shaiba.png" alt="">
+                </picture>
                 <img class="persons-piramide max1024" src="img/1x1.png" data-src="img/piramide.svg" alt="">
                 <div class="persons__container ">
                     <div class="persons__body">
@@ -919,7 +1027,10 @@
                             <div class="persons__grid-body">
                                 <div class="person swiper-slide scroll-start">
                                     <div class="person__image">
-                                        <img src="img/alexei-suhodoev.png" alt="">
+                                        <picture>
+                                            <source srcset="img/alexei-suhodoev.webp" type="image/webp"><img
+                                                src="img/alexei-suhodoev.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Алексей Суходоев</span><img src="img/persons-svg.svg"
@@ -946,7 +1057,10 @@
 
                                     <h2 class="persons__titles _section-title">Спикеры события</h2>
                                     <div class="person__image">
-                                        <img src="img/patrila-ismailova.png" alt="">
+                                        <picture>
+                                            <source srcset="img/patrila-ismailova.webp" type="image/webp"><img
+                                                src="img/patrila-ismailova.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Патила Исмаилова</span><img src="img/persons-svg.svg"
@@ -960,7 +1074,10 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/igor-nosov.png" alt="">
+                                        <picture>
+                                            <source srcset="img/igor-nosov.webp" type="image/webp"><img
+                                                src="img/igor-nosov.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Игорь Носов</span><img src="img/persons-svg.svg" alt=""></label>
@@ -979,7 +1096,10 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/elena-libkind.png" alt="">
+                                        <picture>
+                                            <source srcset="img/elena-libkind.webp" type="image/webp"><img
+                                                src="img/elena-libkind.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Елена Либкинд</span><img src="img/persons-svg.svg" alt=""></label>
@@ -992,7 +1112,10 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/elizaveta-piatibratova.png" alt="">
+                                        <picture>
+                                            <source srcset="img/elizaveta-piatibratova.webp" type="image/webp"><img
+                                                src="img/elizaveta-piatibratova.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Елизавета Пятибратова</span><img src="img/persons-svg.svg"
@@ -1010,7 +1133,10 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/irina-volkova.png" alt="">
+                                        <picture>
+                                            <source srcset="img/irina-volkova.webp" type="image/webp"><img
+                                                src="img/irina-volkova.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Ирина Волкова</span><img src="img/persons-svg.svg" alt=""></label>
@@ -1028,7 +1154,10 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/frantisek-solar.png" alt="">
+                                        <picture>
+                                            <source srcset="img/frantisek-solar.webp" type="image/webp"><img
+                                                src="img/frantisek-solar.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Frantisek Solar</span><img src="img/persons-svg.svg"
@@ -1037,7 +1166,7 @@
                                             <li>Представитель правления SWC
                                             </li>
                                             <li>Руководитель международного отделения работы с партнерами
-                                                и TOP - экспертами
+                                                и топ экспертами
                                             </li>
                                             <li class="min560">Долгосрочный успешный инвестор и структурный строитель в
                                                 сетевом маркетинге</li>
@@ -1047,52 +1176,61 @@
                                 </div>
                                 <div class="person swiper-slide">
                                     <div class="person__image">
-                                        <img src="img/asel-sidikova.png" alt="">
+                                        <picture>
+                                            <source srcset="img/asel-sidikova.webp" type="image/webp"><img
+                                                src="img/asel-sidikova.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Асель Сыдыкова</span><img src="img/persons-svg.svg" alt=""></label>
                                         <ol>
 
-                                            <li>Основательница Компании GBF</li>
+                                            <li>Основательница Компании "GBF"</li>
                                             <li> Обучает известных политиков в Европе и влиятельнейших бизнесменов
                                                 Казахстана</li>
-                                            <li class="min560">Была признана лучшей женщиной - спикером в Европе в 2014
+                                            <li class="min560">Была признана лучшей женщиной спикером в Европе в 2014
                                                 году</li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="person swiper-slide ">
                                     <div class="person__image">
-                                        <img src="img/alexandra-dassler.png" alt="">
+                                        <picture>
+                                            <source srcset="img/alexandra-dassler.webp" type="image/webp"><img
+                                                src="img/alexandra-dassler.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Александра Дасслер</span><img src="img/persons-svg.svg"
                                                 alt=""></label>
                                         <ol>
                                             <li>Наставник “Высокие чеки в продажах” более 10 лет</li>
-                                            <li class="min560">Инвестор и криптоюрист более 10 лет</li>
-                                            <li class="max560">Инвестор и криптоюрист</li>
+                                            <li class="min560">Инвестор и крипто юрист более 10 лет</li>
+                                            <li class="max560">Инвестор и крипто юрист</li>
 
-                                            <li class="min560">Сосоздатель инвест - игры Myinvestgame. За 6 месяцев
+                                            <li class="min560">Со-создатель инвест игры «Myinvestgame» за 6 месяцев
                                                 открыты представительства игропрактиков в 7
                                                 странах
                                             </li>
 
-                                            <li class="max560"> Сосоздатель инвест - игры Myinvestgame</li>
+                                            <li class="max560"> Со-создатель инвест т-игры «Myinvestgame»</li>
 
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="person swiper-slide scroll-end">
                                     <div class="person__image">
-                                        <img src="img/elena-pichujkina.png" alt="">
+                                        <picture>
+                                            <source srcset="img/elena-pichujkina.webp" type="image/webp"><img
+                                                src="img/elena-pichujkina.png" alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Елена Пичужкина</span><img src="img/persons-svg.svg"
                                                 alt=""></label>
                                         <ol>
                                             <li>Community Lead SWC</li>
-                                            <li>Эксперт в сфере комьюнити - менеджмента</li>
+                                            <li>Эксперт в сфере комьюнити-менеджмента</li>
                                             <li class="min560">Организатор федеральных и региональных бизнес-мероприятий
                                             </li>
                                             <li class="max560">Организатор федеральных бизнес-мероприятий</li>
@@ -1102,7 +1240,10 @@
                                 </div>
                                 <div class="person swiper-slide ">
                                     <div class="person__image">
-                                        <img src="img/yana.png" alt="">
+                                        <picture>
+                                            <source srcset="img/yana.webp" type="image/webp"><img src="img/yana.png"
+                                                alt="">
+                                        </picture>
                                     </div>
                                     <div class="person__info">
                                         <label><span>Яна Горячкова</span><img src="img/persons-svg.svg" alt=""></label>
@@ -1133,7 +1274,10 @@
                                 <div class="programm__slider-wrapper swiper-wrapper">
                                     <div class="programm__slider-slide swiper-slide _hover">
                                         <div class="programm__slider-slide-body">
-                                            <img src="img/slider/wallpaperbetter9.png" alt="">
+                                            <picture>
+                                                <source srcset="img/slider/wallpaperbetter9.webp" type="image/webp"><img
+                                                    src="img/slider/wallpaperbetter9.png" alt="">
+                                            </picture>
                                             <div class="ok">
                                                 <img src="img/ok.svg" alt="">
                                             </div>
@@ -1144,7 +1288,10 @@
                                     </div>
                                     <div class="programm__slider-slide swiper-slide _hover">
                                         <div class="programm__slider-slide-body">
-                                            <img src="img/slider/wallpaperbetter10.png" alt="">
+                                            <picture>
+                                                <source srcset="img/slider/wallpaperbetter10.webp" type="image/webp">
+                                                <img src="img/slider/wallpaperbetter10.png" alt="">
+                                            </picture>
                                             <div class="ok">
                                                 <img src="img/ok.svg" alt="">
                                             </div>
@@ -1155,7 +1302,10 @@
                                     </div>
                                     <div class="programm__slider-slide swiper-slide _hover">
                                         <div class="programm__slider-slide-body">
-                                            <img src="img/slider/wallpaperbetter11.png" alt="">
+                                            <picture>
+                                                <source srcset="img/slider/wallpaperbetter11.webp" type="image/webp">
+                                                <img src="img/slider/wallpaperbetter11.png" alt="">
+                                            </picture>
                                             <div class="ok">
                                                 <img src="img/ok.svg" alt="">
                                             </div>
@@ -1166,7 +1316,10 @@
                                     </div>
                                     <div class="programm__slider-slide swiper-slide _hover">
                                         <div class="programm__slider-slide-body">
-                                            <img src="img/slider/wallpaperbetter12.png" alt="">
+                                            <picture>
+                                                <source srcset="img/slider/wallpaperbetter12.webp" type="image/webp">
+                                                <img src="img/slider/wallpaperbetter12.png" alt="">
+                                            </picture>
                                             <div class="ok">
                                                 <img src="img/ok.svg" alt="">
                                             </div>
@@ -1177,7 +1330,10 @@
                                     </div>
                                     <div class="programm__slider-slide swiper-slide _hover">
                                         <div class="programm__slider-slide-body">
-                                            <img src="img/slider/wallpaperbetter13.png" alt="">
+                                            <picture>
+                                                <source srcset="img/slider/wallpaperbetter13.webp" type="image/webp">
+                                                <img src="img/slider/wallpaperbetter13.png" alt="">
+                                            </picture>
                                             <div class="ok">
                                                 <img src="img/ok.svg" alt="">
                                             </div>
@@ -1188,7 +1344,10 @@
                                     </div>
                                     <div class="programm__slider-slide swiper-slide _hover">
                                         <div class="programm__slider-slide-body">
-                                            <img src="img/slider/wallpaperbetter14.png" alt="">
+                                            <picture>
+                                                <source srcset="img/slider/wallpaperbetter14.webp" type="image/webp">
+                                                <img src="img/slider/wallpaperbetter14.png" alt="">
+                                            </picture>
                                             <div class="ok">
                                                 <img src="img/ok.svg" alt="">
                                             </div>
@@ -1199,7 +1358,10 @@
                                     </div>
                                     <div class="programm__slider-slide swiper-slide _hover">
                                         <div class="programm__slider-slide-body">
-                                            <img src="img/slider/wallpaperbetter15.png" alt="">
+                                            <picture>
+                                                <source srcset="img/slider/wallpaperbetter15.webp" type="image/webp">
+                                                <img src="img/slider/wallpaperbetter15.png" alt="">
+                                            </picture>
                                             <div class="ok">
                                                 <img src="img/ok.svg" alt="">
                                             </div>
@@ -1210,7 +1372,10 @@
                                     </div>
                                     <div class="programm__slider-slide swiper-slide _hover">
                                         <div class="programm__slider-slide-body">
-                                            <img src="img/slider/wallpaperbetter16.png" alt="">
+                                            <picture>
+                                                <source srcset="img/slider/wallpaperbetter16.webp" type="image/webp">
+                                                <img src="img/slider/wallpaperbetter16.png" alt="">
+                                            </picture>
                                             <div class="ok">
                                                 <img src="img/ok.svg" alt="">
                                             </div>
@@ -1243,12 +1408,24 @@
                 </div>
             </section>
             <section class="video slidermin1025" id="videopriglashenie" data-bar="6">
-                <img src="img/kupol-full.png" class="kupol-full" alt="">
-                <img class="video-left-gradient" src="img/1x1.png" data-src="img/video-left-gradinet.png" alt="">
-                <img class="video-right-gradient" src="img/1x1.png" data-src="img/video-right-gradinet.png" alt="">
+                <picture>
+                    <source srcset="img/kupol-full.webp" type="image/webp"><img src="img/kupol-full.png"
+                        class="kupol-full" alt="">
+                </picture>
+                <picture>
+                    <source data-srcset="img/video-left-gradinet.webp" type="image/webp"><img
+                        class="video-left-gradient" src="img/1x1.png" data-src="img/video-left-gradinet.png" alt="">
+                </picture>
+                <picture>
+                    <source data-srcset="img/video-right-gradinet.webp" type="image/webp"><img
+                        class="video-right-gradient" src="img/1x1.png" data-src="img/video-right-gradinet.png" alt="">
+                </picture>
                 <div class="video__container _container">
                     <div class="video__body">
-                        <img class="video-gradient" src="img/1x1.png" data-src="img/video-gradient.png" alt="">
+                        <picture>
+                            <source data-srcset="img/video-gradient.webp" type="image/webp"><img class="video-gradient"
+                                src="img/1x1.png" data-src="img/video-gradient.png" alt="">
+                        </picture>
                         <img class="video-ball" src="img/ball2.svg" alt="">
                         <img class="video-ball2" src="img/1x1.png" data-src="img/video-ball2.svg" alt="">
                         <div class="video__box">
@@ -1257,7 +1434,10 @@
                                 <p>Сентябрь дарит отличные возможности для партнёров SWC</p>
                             </div>
                             <div class="video__box-video">
-                                <img src="img/1x1.png" data-src="img/video.png" alt="">
+                                <picture>
+                                    <source data-srcset="img/video.webp" type="image/webp"><img src="img/1x1.png"
+                                        data-src="img/video.png" alt="">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -1279,8 +1459,8 @@
                                 <h3>350$</h3>
                                 <label>Условие получения скидки:</label>
                                 <ol>
-                                    <li>С <span>1 августа</span> по <span>10 сентября</span> открыть рассрочку лично не
-                                        менее чем на <span>100$</span> в месяц по
+                                    <li>С <span>1 августа</span> по <span>10 сентября</span> открыть рассрочку лично, не
+                                        менее чем на <span>100 $</span> в месяц по
                                         текущему дисконту и доплатить за
                                         участие</li>
                                 </ol>
@@ -1336,11 +1516,12 @@
                                 <h3>250$</h3>
                                 <label>Условие получения скидки:</label>
                                 <ol>
-                                    <li>С <span>1 августа</span> по <span>10 сентября</span> открыть рассрочку лично не
+                                    <li>С <span>1 августа</span> по <span>10 сентября</span> открыть рассрочку лично, не
                                         менее чем на <span>100$</span> в месяц
                                     </li>
                                     <li>+привлечь <span>2 партнеров</span> в первую линию с рассрочкой не менее
-                                        <span>100$</span> в месяц по текущему
+                                        <span>100
+                                            $</span> в месяц по текущему
                                         дисконту и доплатить за участие.
                                     </li>
                                 </ol>
@@ -1370,7 +1551,10 @@
                         </div>
                     </div>
                 </div>
-                <img class="pricing__box-image" src="img/1x1.png" data-src="img/pedestal.png" alt="">
+                <picture>
+                    <source data-srcset="img/pedestal.webp" type="image/webp"><img class="pricing__box-image"
+                        src="img/1x1.png" data-src="img/pedestal.png" alt="">
+                </picture>
             </section>
             <section class="galery _nocenter slidermin1025" id="galereya" data-bar="8">
                 <img class="gallery-shutterstock min768" src="img/1x1.png" data-src="img/shutterstock.svg" alt=""
@@ -1463,7 +1647,7 @@
         <div class="page__progressbar"></div>
     </main>
     <div class="preloader">
-        <!-- <img class="preloader__left" src="img/preloader-left.png" alt=""> -->
+        <!-- <picture><source srcset="img/preloader-left.webp" type="image/webp"><img class="preloader__left" src="img/preloader-left.png" alt=""></picture> -->
         <div class="preloader__left"></div>
         <div class="preloader__body">
             <svg class="logo" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1529,7 +1713,7 @@
                 </defs>
             </svg>
         </div>
-        <!-- <img class="preloader__right" src="img/preloader-right.png" alt=""> -->
+        <!-- <picture><source srcset="img/preloader-right.webp" type="image/webp"><img class="preloader__right" src="img/preloader-right.png" alt=""></picture> -->
         <div class="preloader__right"></div>
     </div>
     <div class="preloader__video">
@@ -1540,16 +1724,14 @@
             <source preload="metadata" muted srcset="files/video_bgc.webm">
         </video>
     </div>
-
-    <script src="https://yastatic.net/share2/share.js"></script>
-    <script src="files/jquery.min.js"></script>
-    <script src="files/swiper.min.js"></script>
-    <script src="files/lazy.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    <script src="https://yastatic.net/share2/share.js?_v=20220811223311"></script>
+    <script src="files/jquery.min.js?_v=20220811223311"></script>
+    <script src="files/swiper.min.js?_v=20220811223311"></script>
+    <script src="files/lazy.js?_v=20220811223311"></script>
+    <script src="js/app.min.js?_v=20220811223311"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js?_v=20220811223311"
         integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-    <script src="files/smoothscroll.js"></script>
-    <script src="js/app.min.js"></script>
-
+    <script src="files/smoothscroll.js?_v=20220811223311"></script>
 </body>
 
 </html>

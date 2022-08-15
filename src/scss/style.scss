@@ -2161,6 +2161,7 @@ body {
                         text-fill-color: transparent;
                         transition: all 0.3s ease 0s;
                         color: #fff;
+                        white-space: nowrap;
                     }
 
                     &::before {
@@ -2240,7 +2241,7 @@ body {
 
                         svg {
                             path {
-                                fill: url("#linear-data");
+                                fill: url(#linear-data);
                             }
                         }
                     }
@@ -3436,7 +3437,7 @@ section {
     pointer-events: none;
 }
 
-.kupol-full{
+.kupol-full {
     bottom: 0;
 }
 
